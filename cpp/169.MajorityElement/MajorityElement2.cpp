@@ -39,23 +39,13 @@ public:
 };
 
 void test1() {
-    std::vector<int> nums;
-    nums.push_back(3);
-    nums.push_back(2);
-    nums.push_back(3);
+    std::vector<int> nums{3, 2, 3};
     Solution s;
     assert(s.majorityElement(nums) == 3);
 }
 
 void test2() {
-    std::vector<int> nums;
-    nums.push_back(2);
-    nums.push_back(2);
-    nums.push_back(1);
-    nums.push_back(1);
-    nums.push_back(1);
-    nums.push_back(2);
-    nums.push_back(2);
+    std::vector<int> nums{2, 2, 1, 1, 1, 2, 2};
     Solution s;
     assert(s.majorityElement(nums) == 2);
 }

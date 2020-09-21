@@ -9,7 +9,6 @@
 
 #include <assert.h>
 
-#include <array>
 #include <iostream>
 #include <vector>
 
@@ -32,46 +31,31 @@ public:
 };
 
 void test1() {
-    std::vector<int> nums;
-    nums.push_back(1);
-    nums.push_back(2);
-    nums.push_back(0);
+    std::vector<int> nums{1, 2, 0};
     Solution s;
     assert(s.firstMissingPositive(nums) == 3);
 }
 
 void test2() {
-    std::vector<int> nums;
-    nums.push_back(3);
-    nums.push_back(4);
-    nums.push_back(-1);
-    nums.push_back(1);
+    std::vector<int> nums{3, 4, -1, 1};
     Solution s;
     assert(s.firstMissingPositive(nums) == 2);
 }
 
 void test3() {
-    std::vector<int> nums;
-    nums.push_back(7);
-    nums.push_back(8);
-    nums.push_back(9);
-    nums.push_back(11);
-    nums.push_back(12);
+    std::vector<int> nums{7, 8, 9, 11, 12};
     Solution s;
     assert(s.firstMissingPositive(nums) == 1);
 }
 
 void test4() {
-    std::vector<int> nums;
-    nums.push_back(2);
-    nums.push_back(1);
+    std::vector<int> nums{2, 1};
     Solution s;
     assert(s.firstMissingPositive(nums) == 3);
 }
 
 void test5() {
-    std::vector<int> nums;
-    nums.push_back(2147483647);
+    std::vector<int> nums{2147483647};
     Solution s;
     assert(s.firstMissingPositive(nums) == 1);
 }
