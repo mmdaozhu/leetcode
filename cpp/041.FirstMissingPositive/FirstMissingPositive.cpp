@@ -22,7 +22,7 @@ public:
                 array[n] = 1;
             }
         }
-        for (auto i = 1; i < array.size(); i++) {
+        for (size_t i = 1; i < array.size(); i++) {
             if (array[i] == 0) {
                 return i;
             }
