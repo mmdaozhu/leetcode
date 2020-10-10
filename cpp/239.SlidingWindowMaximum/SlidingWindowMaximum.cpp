@@ -1,5 +1,4 @@
-#include <assert.h>
-
+#include <cassert>
 #include <iostream>
 #include <limits>
 #include <vector>
@@ -40,11 +39,9 @@ public:
 };
 
 void test1() {
-    int a[] = {1, 3, -1, -3, 5, 3, 6, 7};
-    std::vector<int> nums{a, a + sizeof(a) / sizeof(int)};
+    std::vector<int> nums{1, 3, -1, -3, 5, 3, 6, 7};
     int k = 3;
-    int res[] = {3, 3, 5, 5, 6, 7};
-    std::vector<int> results(res, res + sizeof(res) / sizeof(int));
+    std::vector<int> results{3, 3, 5, 5, 6, 7};
     Solution s;
     assert(s.maxSlidingWindow(nums, k) == results);
 }
