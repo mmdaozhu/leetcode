@@ -17,6 +17,7 @@ LeetCode
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./cpp/104.MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree.cpp)|Easy|
 |112|[Path Sum](https://leetcode.com/problems/path-sum/)| [C++](./cpp/112.PathSum/PathSum.cpp)|Easy|
 |120|[Triangle](https://leetcode.com/problems/triangle/)| [C++](./cpp/120.Triangle/Triangle.cpp)|Medium|
+|121|[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)| [C++](./cpp/121.BestTimeToBuyAndSellStock/BestTimeToBuyAndSellStock.cpp)|Easy|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)| [C++](./cpp/141.LinkedListCycle/LinkedListCycle1.cpp)|Easy|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./cpp/150.EvaluateReversePolishNotation/EvaluateReversePolishNotation.cpp)|Medium|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)| [C++](./cpp/151.ReverseWordsInAString/ReverseWordsInAString.cpp)|Medium|
