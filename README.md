@@ -1,7 +1,9 @@
 LeetCode
 ========
 
-### LeetCode Algorithm
+### [LeetCode Algorithm(Java)](./README_JAVA.md)
+
+### [LeetCode Algorithm(C++)](./README.md)
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
