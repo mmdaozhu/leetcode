@@ -3,6 +3,8 @@ LeetCode
 
 ### [LeetCode Algorithm(Java)](./README_JAVA.md)
 
+### [LeetCode Algorithm(Python)](./README_PYTHON.md)
+
 ### [LeetCode Algorithm(C++)](./README.md)
 
 | # | Title | Solution | Difficulty |
