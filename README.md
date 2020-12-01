@@ -13,6 +13,7 @@ LeetCode
 |015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp)|Easy|
 |023|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [C++](./cpp/023.MergekSortedLists/MergekSortedLists.cpp)|Hard|
+|024|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./cpp/024.SwapNodesInPairs/SwapNodesInPairs.cpp)|Medium|
 |036|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [C++](./cpp/036.ValidSudoku/ValidSudoku.cpp)|Medium|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./cpp/041.FirstMissingPositive/FirstMissingPositive.cpp)|Hard|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
@@ -29,6 +30,7 @@ LeetCode
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)| [C++](./cpp/151.ReverseWordsInAString/ReverseWordsInAString.cpp)|Medium|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)| [C++](./cpp/169.MajorityElement/MajorityElement1.cpp)|Easy|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./cpp/200.NumberofIslands/NumberofIslands1.cpp)|Medium|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./cpp/206.ReverseLinkedList/ReverseLinkedList.cpp)|Easy|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./cpp/226.InvertBinaryTree/InvertBinaryTree.cpp)|Easy|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./cpp/239.SlidingWindowMaximum/SlidingWindowMaximum.cpp)|Hard|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)| [C++](./cpp/322.CoinChange/CoinChange.cpp)|Medium|
