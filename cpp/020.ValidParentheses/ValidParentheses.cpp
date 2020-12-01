@@ -1,37 +1,39 @@
 /*
 解题思路
-a. 左括号 -> push
-b. 右括号 ->
+a.  左括号 -> push
+b.  右括号 ->
         b.1 stack empty: return false
         b.2 stack not empty ->
                                 b.2.1 peek: if match, pop
                                 b.2.2 peek: not match, return false
-c. 扫描完   stack empty: return true
-            stack not empty: return false
+c.  扫描完  return stack.empty()
 
 时间复杂度: O(n)
-
 */
 
-#include <assert.h>
-
+#include <cassert>
 #include <iostream>
+#include <map>
 #include <stack>
 #include <string>
 
 class Solution {
 public:
     bool isValid(std::string s) {
+        std::map<char, char> map;
+        map[')'] = '(';
+        map[']'] = '[';
+        map['}'] = '{';
+
         std::stack<char> stack;
-        for (auto c : s) {
-            if (isLeftBracket(c)) {
+        for (const auto& c : s) {
+            if (map.find(c) == map.end()) {
                 stack.push(c);
             } else {
                 if (stack.empty()) {
                     return false;
                 } else {
-                    auto top = stack.top();
-                    if (!isMatch(top, c)) {
+                    if (map[c] != stack.top()) {
                         return false;
                     } else {
                         stack.pop();
@@ -40,38 +42,6 @@ public:
             }
         }
         return stack.empty();
-    }
-
-private:
-    bool isLeftBracket(char c) {
-        switch (c) {
-            case '(':
-            case '{':
-            case '[':
-                return true;
-                break;
-            default:
-                return false;
-                break;
-        }
-        return false;
-    }
-
-    bool isMatch(char left, char right) {
-        switch (left) {
-            case '(':
-                return right == ')';
-                break;
-            case '{':
-                return right == '}';
-                break;
-            case '[':
-                return right == ']';
-                break;
-            default:
-                break;
-        }
-        return false;
     }
 };
 
