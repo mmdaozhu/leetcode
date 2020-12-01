@@ -1,36 +1,35 @@
 /*
 解体思路：
-   将链表每个结点的指针依次在set里面找下，如果存在返回true，不存在就把放到set里面。
+    使用set
 
-时间复杂度分析：O(logn)
+时间复杂度分析：O(n)
 */
 
-#include <assert.h>
-
+#include <cassert>
 #include <iostream>
 #include <set>
 
 /**
  * Definition for singly-linked list.
- *
  */
-
 struct ListNode {
     int val;
     ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
 class Solution {
 public:
     bool hasCycle(ListNode* head) {
-        std::set<ListNode*> s;
-        ListNode* p = head;
-        while (p != nullptr) {
-            if (s.find(p) != s.end()) {
+        std::set<ListNode*> set;
+        auto p = head;
+        while (p) {
+            if (set.find(p) != set.end()) {
                 return true;
             } else {
-                s.insert(p);
+                set.insert(p);
             }
             p = p->next;
         }
@@ -39,32 +38,30 @@ public:
 };
 
 void test1() {
-    ListNode head(3);
-    ListNode second(2);
-    ListNode third(0);
-    ListNode fourth(-4);
-    head.next = &second;
-    second.next = &third;
-    third.next = &fourth;
-    fourth.next = &second;
+    ListNode four(-4);
+    ListNode three(0, &four);
+    ListNode two(2, &three);
+    ListNode one(3, &two);
+    four.next = &two;
+
     Solution s;
-    assert(s.hasCycle(&head) == true);
+    assert(s.hasCycle(&one) == true);
 }
 
 void test2() {
-    ListNode head(1);
-    ListNode second(2);
-    head.next = &second;
-    second.next = &head;
+    ListNode two(2);
+    ListNode one(1, &two);
+    two.next = &one;
+
     Solution s;
-    assert(s.hasCycle(&head) == true);
+    assert(s.hasCycle(&one) == true);
 }
 
 void test3() {
-    ListNode head(1);
-    head.next = nullptr;
+    ListNode one(1);
+
     Solution s;
-    assert(s.hasCycle(&head) == false);
+    assert(s.hasCycle(&one) == false);
 }
 
 int main() {

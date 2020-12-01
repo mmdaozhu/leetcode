@@ -2,30 +2,29 @@
 解体思路：
     使用快慢指针
 
-时间复杂度分析：O(logn)
+时间复杂度分析：O(n)
 */
 
-#include <assert.h>
-
+#include <cassert>
 #include <iostream>
 
 /**
  * Definition for singly-linked list.
- *
  */
-
 struct ListNode {
     int val;
     ListNode* next;
+    ListNode() : val(0), next(nullptr) {}
     ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
 class Solution {
 public:
     bool hasCycle(ListNode* head) {
-        ListNode* slow = head;
-        ListNode* fast = head;
-        while (fast != nullptr && fast->next != nullptr) {
+        auto fast = head;
+        auto slow = head;
+        while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
             if (slow == fast) {
@@ -37,32 +36,30 @@ public:
 };
 
 void test1() {
-    ListNode head(3);
-    ListNode second(2);
-    ListNode third(0);
-    ListNode fourth(-4);
-    head.next = &second;
-    second.next = &third;
-    third.next = &fourth;
-    fourth.next = &second;
+    ListNode four(-4);
+    ListNode three(0, &four);
+    ListNode two(2, &three);
+    ListNode one(3, &two);
+    four.next = &two;
+
     Solution s;
-    assert(s.hasCycle(&head) == true);
+    assert(s.hasCycle(&one) == true);
 }
 
 void test2() {
-    ListNode head(1);
-    ListNode second(2);
-    head.next = &second;
-    second.next = &head;
+    ListNode two(2);
+    ListNode one(1, &two);
+    two.next = &one;
+
     Solution s;
-    assert(s.hasCycle(&head) == true);
+    assert(s.hasCycle(&one) == true);
 }
 
 void test3() {
-    ListNode head(1);
-    head.next = nullptr;
+    ListNode one(1);
+
     Solution s;
-    assert(s.hasCycle(&head) == false);
+    assert(s.hasCycle(&one) == false);
 }
 
 int main() {
