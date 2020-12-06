@@ -9,6 +9,7 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
+|001|[Two Sum](https://leetcode.com/problems/two-sum/)| [C++](./cpp/001.TwoSum/TwoSum.cpp)|Easy|
 |008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [C++](./cpp/008.StringToInteger(atoi)/StringToInteger(atoi).cpp)|Medium|
 |015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp)|Easy|
@@ -35,6 +36,7 @@ LeetCode
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./cpp/226.InvertBinaryTree/InvertBinaryTree.cpp)|Easy|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./cpp/232.ImplementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./cpp/239.SlidingWindowMaximum/SlidingWindowMaximum.cpp)|Hard|
+|242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./cpp/242.ValidAnagram/ValidAnagram1.cpp)|Easy|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)| [C++](./cpp/322.CoinChange/CoinChange.cpp)|Medium|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)| [C++](./cpp/344.ReverseString/ReverseString.cpp)|Easy|
 |641|[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)| [C++](./cpp/641.DesignCircularDeque/DesignCircularDeque.cpp)|Medium|
