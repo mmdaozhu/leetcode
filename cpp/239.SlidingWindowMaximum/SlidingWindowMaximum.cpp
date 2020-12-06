@@ -1,46 +1,45 @@
-#include <cassert>
-#include <iostream>
-#include <limits>
-#include <vector>
-
 /*
 解体思路：
-    最重要的是记录滑动窗口最大值的坐标。
-    在每次窗口滑动结束后：
-        1.如果滑动窗口最大值的坐标不在滑动窗口中，则重新计算窗口中的最大值,并记录下滑动窗口最大值的坐标。
-        2.如果滑动窗口最大值的坐标在滑动窗口中，则最大值和窗口中最后一个数值比较，并记录下滑动窗口最大值的坐标。
+    维护一个长度为k的窗口，里面保存的是数组的坐标。
+    最大值永远是窗口最左边的值。
+    最关键的步骤是：
+        如果进窗口元素的值大于窗口最右边的值，则把窗口最右边的值弹出。
+        循环做上述操作直到不满足条件。
 
 时间复杂度分析：O(n)
 */
 
+#include <cassert>
+#include <deque>
+#include <iostream>
+#include <vector>
+
 class Solution {
 public:
     std::vector<int> maxSlidingWindow(std::vector<int>& nums, int k) {
-        std::vector<int> results;
-        int maxPos = -1;
-        for (int i = 0; i < nums.size() - k + 1; i++) {
-            if (maxPos < i) {
-                int min = std::numeric_limits<int>::min();
-                for (int j = i; j < i + k; j++) {
-                    if (nums[j] > min) {
-                        min = nums[j];
-                        maxPos = j;
-                    }
-                }
-            } else {
-                if (nums[maxPos] <= nums[i + k - 1]) {
-                    maxPos = i + k - 1;
-                }
+        std::vector<int> result;
+        std::deque<int> window;
+        for (int i = 0; i < nums.size(); i++) {
+            if (i >= k && i - window.front() >= k) {
+                window.pop_front();
             }
-            results.push_back(nums[maxPos]);
+
+            while (!window.empty() && nums[window.back()] <= nums[i]) {
+                window.pop_back();
+            }
+            window.emplace_back(i);
+            if (i >= k - 1) {
+                result.emplace_back(nums[window.front()]);
+            }
         }
-        return results;
+
+        return result;
     }
 };
 
 void test1() {
+    auto k = 3;
     std::vector<int> nums{1, 3, -1, -3, 5, 3, 6, 7};
-    int k = 3;
     std::vector<int> results{3, 3, 5, 5, 6, 7};
     Solution s;
     assert(s.maxSlidingWindow(nums, k) == results);
