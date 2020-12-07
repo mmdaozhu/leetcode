@@ -1,6 +1,3 @@
-#include <cassert>
-#include <iostream>
-
 /*
 解体思路：
     递归
@@ -8,10 +5,9 @@
 时间复杂度分析：O(n)
 */
 
-/**
- * Definition for a binary tree node.
- *
- */
+#include <cassert>
+#include <iostream>
+
 struct TreeNode {
     int val;
     TreeNode* left;
@@ -48,7 +44,7 @@ private:
     TreeNode* prev;
 };
 
-void inOrder(const TreeNode* root) {
+void inOrder(TreeNode* root) {
     if (root == nullptr) {
         return;
     }
@@ -57,18 +53,28 @@ void inOrder(const TreeNode* root) {
     inOrder(root->right);
 }
 
-int main() {
-    TreeNode root;
-    root.val = 2;
-    TreeNode rootLeft;
-    rootLeft.val = 1;
-    TreeNode rootRight;
-    rootRight.val = 3;
-    root.left = &rootLeft;
-    root.right = &rootRight;
-
+void test1() {
+    TreeNode rootLeft(1);
+    TreeNode rootRight(3);
+    TreeNode root(2, &rootLeft, &rootRight);
     inOrder(&root);
     Solution s;
-    assert(true == s.isValidBST(&root));
+    assert(s.isValidBST(&root) == true);
+}
+
+void test2() {
+    TreeNode rootRightLeft(3);
+    TreeNode rootRightRight(6);
+    TreeNode rootRight(4, &rootRightLeft, &rootRightRight);
+    TreeNode rootLeft(1);
+    TreeNode root(5, &rootLeft, &rootRight);
+    inOrder(&root);
+    Solution s;
+    assert(s.isValidBST(&root) == false);
+}
+
+int main() {
+    test1();
+    test2();
     return 0;
 }
