@@ -1,10 +1,11 @@
 /*
 解体思路：
-    摩尔投票
+    先排序，然后找中间数，就是众数
 
-时间复杂度分析：O(n)
+时间复杂度分析：O(nlogn)
 */
 
+#include <algorithm>
 #include <cassert>
 #include <iostream>
 #include <vector>
@@ -12,19 +13,8 @@
 class Solution {
 public:
     int majorityElement(std::vector<int>& nums) {
-        auto count = 0;
-        auto majority = 0;
-        for (const auto& num : nums) {
-            if (count == 0) {
-                majority = num;
-            }
-            if (num == majority) {
-                count++;
-            } else {
-                count--;
-            }
-        }
-        return majority;
+        std::sort(nums.begin(), nums.end());
+        return nums[nums.size() / 2];
     }
 };
 
