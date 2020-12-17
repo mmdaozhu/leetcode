@@ -23,6 +23,7 @@ struct TreeNode {
 class Solution {
 public:
     int maxDepth(TreeNode *root) {
+        max_depth = 0;
         maxDepth(root, 0);
         return max_depth;
     }
