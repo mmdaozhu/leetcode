@@ -15,8 +15,8 @@ public:
             return x;
         }
 
-        int low(0);
-        int high(x);
+        auto low(0);
+        auto high(x);
         while (low <= high) {
             auto mid = low + ((high - low) >> 1);
             if (x / mid < mid) {
@@ -34,18 +34,21 @@ public:
 };
 
 void test1() {
+    auto x = 4;
+    auto result = 2;
     Solution s;
-    assert(s.mySqrt(2) == 1);
-    assert(s.mySqrt(3) == 1);
-    assert(s.mySqrt(4) == 2);
-    assert(s.mySqrt(5) == 2);
-    assert(s.mySqrt(6) == 2);
-    assert(s.mySqrt(7) == 2);
-    assert(s.mySqrt(8) == 2);
-    assert(s.mySqrt(9) == 3);
+    assert(s.mySqrt(x) == result);
+}
+
+void test2() {
+    auto x = 8;
+    auto result = 2;
+    Solution s;
+    assert(s.mySqrt(x) == result);
 }
 
 int main() {
     test1();
+    test2();
     return 0;
 }
