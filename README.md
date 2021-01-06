@@ -38,8 +38,10 @@ LeetCode
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./cpp/150.EvaluateReversePolishNotation/EvaluateReversePolishNotation.cpp)|Medium|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)| [C++](./cpp/151.ReverseWordsInAString/ReverseWordsInAString.cpp)|Medium|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)| [C++](./cpp/169.MajorityElement/MajorityElement1.cpp)|Easy|
+|191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)| [C++](./cpp/191.NumberOf1Bits/NumberOf1Bits.cpp)|Easy|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./cpp/200.NumberofIslands/NumberofIslands1.cpp)|Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./cpp/206.ReverseLinkedList/ReverseLinkedList.cpp)|Easy|
+|208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [C++](./cpp/208.ImplementTrie/ImplementTrie.cpp)|Medium|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./cpp/225.ImplementStackUsingQueues/ImplementStackUsingQueues.cpp)|Easy|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./cpp/226.InvertBinaryTree/InvertBinaryTree.cpp)|Easy|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./cpp/232.ImplementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
