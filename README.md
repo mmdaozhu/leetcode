@@ -44,12 +44,14 @@ LeetCode
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [C++](./cpp/208.ImplementTrie/ImplementTrie.cpp)|Medium|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./cpp/225.ImplementStackUsingQueues/ImplementStackUsingQueues.cpp)|Easy|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./cpp/226.InvertBinaryTree/InvertBinaryTree.cpp)|Easy|
+|231|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./cpp/231.PowerOfTwo/PowerOfTwo.cpp)|Easy|
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./cpp/232.ImplementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./cpp/235.LowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./cpp/236.LowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp)|Medium|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./cpp/239.SlidingWindowMaximum/SlidingWindowMaximum.cpp)|Hard|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./cpp/242.ValidAnagram/ValidAnagram1.cpp)|Easy|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)| [C++](./cpp/322.CoinChange/CoinChange.cpp)|Medium|
+|338|[Counting Bits](https://leetcode.com/problems/counting-bits/)| [C++](./cpp/338.CountingBits/CountingBits1.cpp)|Medium|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)| [C++](./cpp/344.ReverseString/ReverseString.cpp)|Easy|
 |641|[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)| [C++](./cpp/641.DesignCircularDeque/DesignCircularDeque.cpp)|Medium|
 |703|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)| [C++](./cpp/703.KthLargestElementInAStream/KthLargestElementInAStream.cpp)|Easy|
