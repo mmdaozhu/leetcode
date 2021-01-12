@@ -12,9 +12,7 @@
 
 #include <cassert>
 #include <iostream>
-#include <string>
 #include <unordered_set>
-#include <vector>
 
 class Solution {
 public:
@@ -23,12 +21,11 @@ public:
         if (n == 0) {
             return 0;
         }
-        std::vector<int> states;
-        DFS(n, 0, states);
+        DFS(n, 0);
         return count;
     }
 
-    void DFS(int n, int row, std::vector<int>& states) {
+    void DFS(int n, int row) {
         if (row == n) {
             count++;
             return;
@@ -40,9 +37,7 @@ public:
             cols.insert(col);
             pie.insert(row + col);
             na.insert(row - col);
-            states.emplace_back(col);
-            DFS(n, row + 1, states);
-            states.pop_back();
+            DFS(n, row + 1);
             cols.erase(col);
             pie.erase(row + col);
             na.erase(row - col);
