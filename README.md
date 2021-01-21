@@ -42,7 +42,7 @@ LeetCode
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./cpp/200.NumberofIslands/NumberofIslands1.cpp)|Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./cpp/206.ReverseLinkedList/ReverseLinkedList.cpp)|Easy|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [C++](./cpp/208.ImplementTrie/ImplementTrie.cpp)|Medium|
-|212|[Word Search II](https://leetcode.com/problems/word-search-ii/)| [C++](./cpp/212.WordSearchII/WordSearchII.cpp)|Medium|
+|212|[Word Search II](https://leetcode.com/problems/word-search-ii/)| [C++](./cpp/212.WordSearchII/WordSearchII.cpp)|Hard|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./cpp/225.ImplementStackUsingQueues/ImplementStackUsingQueues.cpp)|Easy|
 |226|[Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)| [C++](./cpp/226.InvertBinaryTree/InvertBinaryTree.cpp)|Easy|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two/)| [C++](./cpp/231.PowerOfTwo/PowerOfTwo.cpp)|Easy|

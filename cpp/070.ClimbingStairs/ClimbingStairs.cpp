@@ -7,7 +7,7 @@
     f(3) = f(2) + f(1)
     f(2) = 2
     f(1) = 1
-    转换成斐波那契数列求和问题。
+    转换成斐波那契数列求和问题
 
 时间复杂度分析：O(n)
 */
@@ -15,12 +15,12 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        int first(0);
-        int second(1);
-        for (int i = 0; i < n; i++) {
+        auto first = 1;
+        auto second = 1;
+        for (int i = 1; i < n; i++) {
             auto sum = first + second;
-            std::swap(first, second);
-            std::swap(second, sum);
+            first = second;
+            second = sum;
         }
         return second;
     }
