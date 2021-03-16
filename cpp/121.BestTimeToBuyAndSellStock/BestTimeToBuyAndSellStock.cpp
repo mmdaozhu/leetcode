@@ -1,9 +1,7 @@
 /*
 解体思路：
-    1.先计算当天（包括过去的几天）能卖出的股票的最大值
-    2.再统计比较每天买入当天股票，卖出这几天股票的最大值后的盈利
+    比较每天能卖出的股票的最大值（当天减去过去最小值）
 
-时间复杂度分析：O(n)
 */
 
 #include <cassert>
@@ -13,23 +11,18 @@
 class Solution {
 public:
     int maxProfit(std::vector<int>& prices) {
-        std::vector<int> max_sells;
-        auto max_sell = 0;
-        for (auto it = prices.rbegin(); it != prices.rend(); it++) {
-            if (*it > max_sell) {
-                max_sell = *it;
-            }
-            max_sells.push_back(max_sell);
-        }
+        int profit = 0;
 
-        auto max_profit = 0;
-        for (int i = 0, j = prices.size() - 1; i < prices.size() && j >= 0; i++, j--) {
-            auto profit = max_sells[j] - prices[i];
-            if (profit > max_profit) {
-                max_profit = profit;
+        int min = *prices.begin();
+        for (auto it = prices.begin() + 1; it != prices.end(); it++) {
+            if (*it - min > profit) {
+                profit = *it - min;
+            }
+            if (*it < min) {
+                min = *it;
             }
         }
-        return max_profit;
+        return profit;
     }
 };
 
