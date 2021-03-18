@@ -18,13 +18,13 @@
 
 class Solution {
 public:
-    int maxProfit(std::vector<int>& prices) {
+    int maxProfit(int k, std::vector<int>& prices) {
         int n = prices.size();
         if (n < 2) {
             return 0;
         }
 
-        int K = 2;
+        int K = k;
         std::vector<std::vector<std::vector<int>>> mp(n, std::vector<std::vector<int>>(K + 1, std::vector<int>(2, 0)));
 
         for (int k = 0; k <= K; k++) {
@@ -54,33 +54,21 @@ public:
 };
 
 void test1() {
-    std::vector<int> prices{3, 3, 5, 0, 0, 3, 1, 4};
+    std::vector<int> prices{2, 4, 1};
+    int k = 2;
     Solution s;
-    assert(s.maxProfit(prices) == 6);
+    assert(s.maxProfit(k, prices) == 2);
 }
 
 void test2() {
-    std::vector<int> prices{1, 2, 3, 4, 5};
+    std::vector<int> prices{3, 2, 6, 5, 0, 3};
+    int k = 2;
     Solution s;
-    assert(s.maxProfit(prices) == 4);
-}
-
-void test3() {
-    std::vector<int> prices{7, 6, 4, 3, 1};
-    Solution s;
-    assert(s.maxProfit(prices) == 0);
-}
-
-void test4() {
-    std::vector<int> prices{1};
-    Solution s;
-    assert(s.maxProfit(prices) == 0);
+    assert(s.maxProfit(k, prices) == 7);
 }
 
 int main() {
     test1();
     test2();
-    test3();
-    test4();
     return 0;
 }

@@ -40,6 +40,7 @@ LeetCode
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)| [C++](./cpp/151.ReverseWordsInAString/ReverseWordsInAString.cpp)|Medium|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)| [C++](./cpp/152.MaximumProductSubarray/MaximumProductSubarray.cpp)|Medium|
 |169|[Majority Element](https://leetcode.com/problems/majority-element/)| [C++](./cpp/169.MajorityElement/MajorityElement1.cpp)|Easy|
+|188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [C++](./cpp/188.BestTimeToBuyAndSellStockIV/BestTimeToBuyAndSellStockIV.cpp)|Hard|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)| [C++](./cpp/191.NumberOf1Bits/NumberOf1Bits.cpp)|Easy|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./cpp/200.NumberofIslands/NumberofIslands1.cpp)|Medium|
 |206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./cpp/206.ReverseLinkedList/ReverseLinkedList.cpp)|Easy|
