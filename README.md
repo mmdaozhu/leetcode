@@ -25,6 +25,7 @@ LeetCode
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt(x)/Sqrt(x).cpp)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp)|Easy|
+|072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./cpp/104.MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree1.cpp)|Easy|
@@ -54,6 +55,7 @@ LeetCode
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./cpp/236.LowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp)|Medium|
 |239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./cpp/239.SlidingWindowMaximum/SlidingWindowMaximum.cpp)|Hard|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./cpp/242.ValidAnagram/ValidAnagram1.cpp)|Easy|
+|300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| [C++](./cpp/300.LongestIncreasingSubsequence/LongestIncreasingSubsequence1.cpp)|Medium|
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)| [C++](./cpp/309.BestTimeToBuyAndSellStockWithCooldown/BestTimeToBuyAndSellStockWithCooldown.cpp)|Medium|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)| [C++](./cpp/322.CoinChange/CoinChange.cpp)|Medium|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)| [C++](./cpp/338.CountingBits/CountingBits1.cpp)|Medium|
