@@ -37,6 +37,7 @@ LeetCode
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [C++](./cpp/123.BestTimeToBuyAndSellStockIII/BestTimeToBuyAndSellStockIII.cpp)|Hard|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/)| [C++](./cpp/127.WordLadder/WordLadder.cpp)|Medium|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)| [C++](./cpp/141.LinkedListCycle/LinkedListCycle1.cpp)|Easy|
+|146|[LRU Cache](https://leetcode.com/problems/lru-cache/)| [C++](./cpp/146.LRUCache/LRUCache.cpp)|Medium|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./cpp/150.EvaluateReversePolishNotation/EvaluateReversePolishNotation.cpp)|Medium|
 |151|[Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)| [C++](./cpp/151.ReverseWordsInAString/ReverseWordsInAString.cpp)|Medium|
 |152|[Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)| [C++](./cpp/152.MaximumProductSubarray/MaximumProductSubarray.cpp)|Medium|
@@ -60,6 +61,7 @@ LeetCode
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)| [C++](./cpp/322.CoinChange/CoinChange.cpp)|Medium|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)| [C++](./cpp/338.CountingBits/CountingBits1.cpp)|Medium|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)| [C++](./cpp/344.ReverseString/ReverseString.cpp)|Easy|
+|547|[Number of Provinces](https://leetcode.com/problems/number-of-provinces/)| [C++](./cpp/547.NumberOfProvinces/NumberOfProvinces.cpp)|Medium|
 |641|[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)| [C++](./cpp/641.DesignCircularDeque/DesignCircularDeque.cpp)|Medium|
 |703|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)| [C++](./cpp/703.KthLargestElementInAStream/KthLargestElementInAStream.cpp)|Easy|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)| [C++](./cpp/714.BestTimeToBuyAndSellStockWithTransactionFee/BestTimeToBuyAndSellStockWithTransactionFee.cpp)|Medium|

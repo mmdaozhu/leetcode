@@ -47,31 +47,15 @@ public:
 };
 
 void test1() {
-    std::vector<std::vector<char>> grid;
-    std::vector<char> line1{'1', '1', '1', '1', '0'};
-    std::vector<char> line2{'1', '1', '0', '1', '0'};
-    std::vector<char> line3{'1', '1', '0', '0', '0'};
-    std::vector<char> line4{'0', '0', '0', '0', '0'};
-    grid.emplace_back(line1);
-    grid.emplace_back(line2);
-    grid.emplace_back(line3);
-    grid.emplace_back(line4);
-
+    std::vector<std::vector<char>> grid{
+        {'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}};
     Solution s;
     assert(s.numIslands(grid) == 1);
 }
 
 void test2() {
-    std::vector<std::vector<char>> grid;
-    std::vector<char> line1{'1', '1', '0', '0', '0'};
-    std::vector<char> line2{'1', '1', '0', '0', '0'};
-    std::vector<char> line3{'0', '0', '1', '0', '0'};
-    std::vector<char> line4{'0', '0', '0', '1', '1'};
-    grid.emplace_back(line1);
-    grid.emplace_back(line2);
-    grid.emplace_back(line3);
-    grid.emplace_back(line4);
-
+    std::vector<std::vector<char>> grid{
+        {'1', '1', '0', '0', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '1', '0', '0'}, {'0', '0', '0', '1', '1'}};
     Solution s;
     assert(s.numIslands(grid) == 3);
 }
