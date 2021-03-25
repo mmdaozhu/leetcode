@@ -24,7 +24,7 @@ LeetCode
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt(x)/Sqrt(x).cpp)|Easy|
-|070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp)|Easy|
+|070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|

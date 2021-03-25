@@ -1,6 +1,3 @@
-#include <cassert>
-#include <iostream>
-
 /*
 解体思路：
     f(n) = f(n-1) + f(n-2)
@@ -11,6 +8,9 @@
 
 时间复杂度分析：O(n)
 */
+
+#include <cassert>
+#include <iostream>
 
 class Solution {
 public:
