@@ -1,18 +1,18 @@
-'''
-时间复杂度分析：O(n)
-'''
-
+# O(n)
+# Runtime Beats 100.00%
 from typing import List
 
 
 class Solution:
+
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dict = {}
         for i, num in enumerate(nums):
             if target - num in dict:
-                return [dict[target-num], i]
-            dict[num] = i
-        return [-1, -1]
+                return [dict[target - num], i]
+            else:
+                dict[num] = i
+        return []
 
 
 def test1():

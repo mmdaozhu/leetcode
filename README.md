@@ -5,6 +5,8 @@ LeetCode
 
 ### [LeetCode Algorithm(Python)](./README_PYTHON.md)
 
+### [LeetCode Algorithm(Go)](./README_GO.md)
+
 ### [LeetCode Algorithm(C++)](./README.md)
 
 | # | Title | Solution | Difficulty |

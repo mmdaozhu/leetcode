@@ -1,6 +1,5 @@
-/*
-时间复杂度分析：O(n)
-*/
+// O(n)
+// Runtime Beats 100.00%
 
 #include <cassert>
 #include <iostream>
@@ -10,18 +9,17 @@
 class Solution {
 public:
     std::vector<int> twoSum(std::vector<int>& nums, int target) {
-        std::vector<int> result;
         std::unordered_map<int, int> map;
-        for (int i = 0; i < nums.size(); i++) {
-            if (map.find(target - nums[i]) != map.end()) {
-                result.emplace_back(map[target - nums[i]]);
-                result.emplace_back(i);
-                return result;
+        int index = 0;
+        for (const auto& elem : nums) {
+            if (map.find(target - elem) != map.end()) {
+                return {map[target - elem], index};
             } else {
-                map[nums[i]] = i;
+                map[elem] = index;
             }
+            index++;
         }
-        return result;
+        return {};
     }
 };
 
