@@ -11,7 +11,10 @@ LeetCode
 
 | # | Title | Solution | Difficulty |
 |---| ----- | -------- | ---------- |
-|001|[Two Sum](https://leetcode.com/problems/two-sum/)| [C++](./cpp/001.TwoSum/TwoSum.cpp)|Easy|
+|001|[Two Sum](https://leetcode.com/problems/two-sum/)| [C++](./cpp/001.TwoSum/TwoSum.cpp), [Python](./python3/001.TwoSum/TwoSum.py), [Go](./go/001.TwoSum/TwoSum.go)|Easy|
+|002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [C++](./cpp/002.AddTwoNumbers/AddTwoNumbers.cpp)|Medium|
+|003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](./cpp/003.LongestSubstringWithoutRepeatingCharacters/LongestSubstringWithoutRepeatingCharacters.cpp)|Medium|
+|005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [C++](./cpp/005.LongestPalindromicSubstring/LongestPalindromicSubstring.cpp)|Medium|
 |008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [C++](./cpp/008.StringToInteger(atoi)/StringToInteger(atoi).cpp)|Medium|
 |015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp)|Easy|
