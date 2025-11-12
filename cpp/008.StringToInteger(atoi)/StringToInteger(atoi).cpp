@@ -1,11 +1,10 @@
+// O(n)
+// Runtime Beats 100%
+
 #include <cassert>
 #include <iostream>
 #include <limits>
 #include <string>
-
-/*
-时间复杂度分析：O(n)
-*/
 
 class Solution {
 public:

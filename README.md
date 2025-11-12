@@ -17,7 +17,9 @@ LeetCode
 |005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [C++](./cpp/005.LongestPalindromicSubstring/LongestPalindromicSubstring.cpp)|Medium|
 |006|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)| [C++](./cpp/006.ZigZagConversion/ZigZagConversion.cpp)|Medium|
 |007|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)| [C++](./cpp/007.ReverseInteger/ReverseInteger.cpp)|Medium|
-|008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [C++](./cpp/008.StringToInteger(atoi)/StringToInteger(atoi).cpp)|Medium|
+|008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [C++](./cpp/008.StringToInteger(atoi)/StringToInteger(atoi).cpp), [Python](./python3/008.StringToInteger(atoi)/StringToInteger(atoi).py)|Medium|
+|009|[Palindrome Number](https://leetcode.com/problems/palindrome-number/)| [C++](./cpp/009.PalindromeNumber/PalindromeNumber.cpp)|Easy|
+
 |015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp)|Easy|
 |022|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [C++](./cpp/022.GenerateParentheses/GenerateParentheses.cpp)|Medium|
