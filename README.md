@@ -1,12 +1,6 @@
 LeetCode
 ========
 
-### [LeetCode Algorithm(Java)](./README_JAVA.md)
-
-### [LeetCode Algorithm(Python)](./README_PYTHON.md)
-
-### [LeetCode Algorithm(Go)](./README_GO.md)
-
 ### [LeetCode Algorithm(C++)](./README.md)
 
 | # | Title | Solution | Difficulty |
@@ -22,7 +16,8 @@ LeetCode
 |011|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)| [C++](./cpp/011.ContainerWithMostWater/ContainerWithMostWater.cpp)|Medium|
 |012|[Integer to Roman](https://leetcode.com/problems/integer-to-roman/)| [C++](./cpp/012.IntegerToRoman/IntegerToRoman.cpp)|Medium|
 |013|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| [C++](./cpp/013.RomanToInteger/RomanToInteger.cpp)|Easy|
-|015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp)|Medium|
+|014|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)| [C++](./cpp/014.LongestCommonPrefix/LongestCommonPrefix.cpp)|Easy|
+|015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp), [Python](./python3/015.3Sum/3Sum.py), [Go](./go/015.3Sum/3Sum.go)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp)|Easy|
 |022|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [C++](./cpp/022.GenerateParentheses/GenerateParentheses.cpp)|Medium|
 |023|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [C++](./cpp/023.MergekSortedLists/MergekSortedLists.cpp)|Hard|

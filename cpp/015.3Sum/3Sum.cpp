@@ -8,9 +8,10 @@
       2.2 如果a+b+c>0，{a,b,*,*,*,c,*}
       2.3 如果a+b+c<0，{a,*,b,*,*,c,*}
       2.4 如果a+b+c=0，放入result中
-
-时间复杂度分析：O(n*n)
 */
+
+// O(n*n)
+// Runtime Beats 34.90%
 
 #include <algorithm>
 #include <cassert>
@@ -67,25 +68,21 @@ public:
 
 void test1() {
     std::vector<int> nums{-1, 0, 1, 2, -1, -4};
-    std::vector<std::vector<int>> result;
-    std::vector<int> res1{-1, -1, 2};
-    std::vector<int> res2{-1, 0, 1};
-    result.emplace_back(res1);
-    result.emplace_back(res2);
+    std::vector<std::vector<int>> result{{-1, -1, 2}, {-1, 0, 1}};
     Solution s;
     assert(s.threeSum(nums) == result);
 }
 
 void test2() {
-    std::vector<int> nums;
+    std::vector<int> nums{0, 1, 1};
     std::vector<std::vector<int>> result;
     Solution s;
     assert(s.threeSum(nums) == result);
 }
 
 void test3() {
-    std::vector<int> nums{0};
-    std::vector<std::vector<int>> result;
+    std::vector<int> nums{0, 0, 0};
+    std::vector<std::vector<int>> result{{0, 0, 0}};
     Solution s;
     assert(s.threeSum(nums) == result);
 }
