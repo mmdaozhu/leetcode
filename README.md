@@ -18,6 +18,8 @@ LeetCode
 |013|[Roman to Integer](https://leetcode.com/problems/roman-to-integer/)| [C++](./cpp/013.RomanToInteger/RomanToInteger.cpp)|Easy|
 |014|[Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)| [C++](./cpp/014.LongestCommonPrefix/LongestCommonPrefix.cpp)|Easy|
 |015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp), [Python](./python3/015.3Sum/3Sum.py), [Go](./go/015.3Sum/3Sum.go)|Medium|
+|017|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [C++](./cpp/017.LetterCombinationsOfAPhoneNumber/LetterCombinationsOfAPhoneNumber.cpp)|Medium|
+|019|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [C++](./cpp/019.RemoveNthNodeFromEndOfList/RemoveNthNodeFromEndOfList.cpp)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp), [Python](./python3/020.ValidParentheses/ValidParentheses.py), [Go](./go/020.ValidParentheses/ValidParentheses.go)|Easy|
 |022|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [C++](./cpp/022.GenerateParentheses/GenerateParentheses.cpp)|Medium|
 |023|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [C++](./cpp/023.MergekSortedLists/MergekSortedLists.cpp)|Hard|
