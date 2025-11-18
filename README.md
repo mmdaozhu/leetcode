@@ -20,15 +20,18 @@ LeetCode
 |015|[3Sum](https://leetcode.com/problems/3sum/)| [C++](./cpp/015.3Sum/3Sum.cpp), [Python](./python3/015.3Sum/3Sum.py), [Go](./go/015.3Sum/3Sum.go)|Medium|
 |016|[3Sum Closest](https://leetcode.com/problems/3sum-closest/)| [C++](./cpp/016.3SumClosest/3SumClosest.cpp)|Medium|
 |017|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)| [C++](./cpp/017.LetterCombinationsOfAPhoneNumber/LetterCombinationsOfAPhoneNumber.cpp)|Medium|
+|018|[4Sum](https://leetcode.com/problems/4sum/)| [C++](./cpp/018.4Sum/4Sum.cpp), [C++](./cpp/018.4Sum/4Sum1.cpp)|Medium|
 |019|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)| [C++](./cpp/019.RemoveNthNodeFromEndOfList/RemoveNthNodeFromEndOfList.cpp)|Medium|
 |020|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)| [C++](./cpp/020.ValidParentheses/ValidParentheses.cpp), [Python](./python3/020.ValidParentheses/ValidParentheses.py), [Go](./go/020.ValidParentheses/ValidParentheses.go)|Easy|
 |021|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)| [C++](./cpp/021.MergeTwoSortedLists/MergeTwoSortedLists.cpp)|Easy|
 |022|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [C++](./cpp/022.GenerateParentheses/GenerateParentheses.cpp)|Medium|
 |023|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [C++](./cpp/023.MergekSortedLists/MergekSortedLists.cpp)|Hard|
-|024|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./cpp/024.SwapNodesInPairs/SwapNodesInPairs.cpp)|Medium|
+|024|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./cpp/024.SwapNodesInPairs/SwapNodesInPairs.cpp), [Python](./python3/024.SwapNodesInPairs/SwapNodesInPairs.py), [Go](./go/024.SwapNodesInPairs/SwapNodesInPairs.go), |Medium|
 |026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./cpp/026.RemoveDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.cpp)|Easy|
 |027|[Remove Element](https://leetcode.com/problems/remove-element/)| [C++](./cpp/027.RemoveElement/RemoveElement.cpp)|Easy|
 |028|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)| [C++](./cpp/028.ImplementstrStr/ImplementstrStr.cpp)|Easy|
+|029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [C++](./cpp/029.DivideTwoInt/DivideTwoInt.cpp)|Medium|
+|031|[Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./cpp/031.NextPermutation/NextPermutation.cpp)|Medium|
 |036|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [C++](./cpp/036.ValidSudoku/ValidSudoku.cpp)|Medium|
 |037|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [C++](./cpp/037.SudokuSolver/SudokuSolver.cpp)|Hard|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./cpp/041.FirstMissingPositive/FirstMissingPositive.cpp)|Hard|

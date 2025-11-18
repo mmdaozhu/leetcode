@@ -1,33 +1,46 @@
 /*
 解体思路：
-    p(prev)
-    r(res)
-            1   >   2   >   3   >   4   >   NULL
 
-    p       a   >   b   (第一步)
+prev     a     b
+ |       |     |
+ v       v     v
+dummy →  1  →  2  →  3  →  4
 
-    ---------------->
-    |               |
-    p       a   >   b   (第二步)
+第一步：
+prev     a     b
+ |       |     |
+ v       v     v
+dummy    1  →  2  →  3  →  4
+   \___________^
 
-    ---------------->
-    |               |
-    p       a   <   b   (第三步)
 
-    ---------------->
-    |               |
-    p       a   <   b
-            |               |
-            ---------------->   (第四步)
+第二步：
+prev     a     b
+ |       |     |
+ v       v     v
+dummy    1  ←  2     3  →  4
+   \___________^
 
-    p   >   b   >   a   >       (第四步)
 
-    r   >   b   >   a   >       (第五步)
-                    p
+第三步：
+prev     b     a
+ |       |     |
+ v       v     v
+dummy →  2  →  1  →  3  →  4
 
-时间复杂度分析：O(n)
+
+第四步：
+             prev
+               |
+               v
+dummy →  2  →  1  →  3  →  4
+
 */
 
+// O(n)
+// Runtime Beats 100.00%
+
+#include <cassert>
 #include <iostream>
 
 /**
@@ -63,20 +76,47 @@ public:
 };
 
 void test1() {
-    ListNode four(4);
-    ListNode three(3, &four);
-    ListNode two(2, &three);
-    ListNode one(1, &two);
-
+    ListNode* list = new ListNode(1);
+    list->next = new ListNode(2);
+    list->next->next = new ListNode(3);
+    list->next->next->next = new ListNode(4);
     Solution s;
-    auto p_node = s.swapPairs(&one);
-    while (p_node) {
-        std::cout << p_node->val << std::endl;
-        p_node = p_node->next;
-    }
+    auto res = s.swapPairs(list);
+    assert(res->val == 2);
+    assert(res->next->val == 1);
+    assert(res->next->next->val == 4);
+    assert(res->next->next->next->val == 3);
+}
+
+void test2() {
+    ListNode* list = nullptr;
+    Solution s;
+    auto res = s.swapPairs(list);
+    assert(res == nullptr);
+}
+
+void test3() {
+    ListNode* list = new ListNode(1);
+    Solution s;
+    auto res = s.swapPairs(list);
+    assert(res->val == 1);
+}
+
+void test4() {
+    ListNode* list = new ListNode(1);
+    list->next = new ListNode(2);
+    list->next->next = new ListNode(3);
+    Solution s;
+    auto res = s.swapPairs(list);
+    assert(res->val == 2);
+    assert(res->next->val == 1);
+    assert(res->next->next->val == 3);
 }
 
 int main() {
     test1();
+    test2();
+    test3();
+    test4();
     return 0;
 }

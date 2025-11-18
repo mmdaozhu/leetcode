@@ -1,39 +1,22 @@
-'''
-解体思路：
-    p(pre)
-    r(res)
-            1   >   2   >   3   >   4   >   NULL
-    p       a   >   b   (第一步)
-    ---------------->
-    |               |
-    p       a   >   b   (第二步)
-    ---------------->
-    |               |
-    p       a   <   b   (第三步)
-    ---------------->
-    |               |
-    p       a   <   b
-            |               |
-            ---------------->   (第四步)
-    p   >   b   >   a   >       (第四步)
-    r   >   b   >   a   >       (第五步)
-                    p
-
-时间复杂度分析：O(n)
-'''
-
+# O(n)
+# Runtime Beats 100.00%
 
 # Definition for singly-linked list.
+from typing import Optional
+
+
 class ListNode:
+
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
 
 class Solution:
-    def swapPairs(self, head: ListNode) -> ListNode:
+
+    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
         pre, pre.next = self, head
-        while(pre.next and pre.next.next):
+        while (pre.next and pre.next.next):
             a = pre.next
             b = a.next
 
@@ -45,16 +28,39 @@ class Solution:
 
 
 def test1():
-    four = ListNode(4)
-    three = ListNode(3, four)
-    two = ListNode(2, three)
-    one = ListNode(1, two)
-
+    list = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
     s = Solution()
-    swapList = s.swapPairs(one)
-    while(swapList):
-        print(swapList.val)
-        swapList = swapList.next
+    res = s.swapPairs(list)
+    assert res.val == 2
+    assert res.next.val == 1
+    assert res.next.next.val == 4
+    assert res.next.next.next.val == 3
+
+
+def test2():
+    list = None
+    s = Solution()
+    res = s.swapPairs(list)
+    assert res == None
+
+
+def test3():
+    list = ListNode(1)
+    s = Solution()
+    res = s.swapPairs(list)
+    assert res.val == 1
+
+
+def test4():
+    list = ListNode(1, ListNode(2, ListNode(3)))
+    s = Solution()
+    res = s.swapPairs(list)
+    assert res.val == 2
+    assert res.next.val == 1
+    assert res.next.next.val == 3
 
 
 test1()
+test2()
+test3()
+test4()

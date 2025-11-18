@@ -1,4 +1,4 @@
-// O(n)
+// O(n*n)
 // Runtime Beats 100.00%
 
 #include <cassert>
