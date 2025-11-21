@@ -37,7 +37,10 @@ LeetCode
 |035|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [C++](./cpp/035.SearchInsertPosition/SearchInsertPosition.cpp)|Medium|
 |036|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [C++](./cpp/036.ValidSudoku/ValidSudoku.cpp)|Medium|
 |037|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [C++](./cpp/037.SudokuSolver/SudokuSolver.cpp)|Hard|
+|038|[Count and Say](https://leetcode.com/problems/count-and-say/)| [C++](./cpp/038.CountAndSay/CountAndSay.cpp)|Medium|
+|039|[Combination Sum](https://leetcode.com/problems/combination-sum/)| [C++](./cpp/039.CombinationSum/CombinationSum.cpp)|Medium|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./cpp/041.FirstMissingPositive/FirstMissingPositive.cpp)|Hard|
+|043|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [C++](./cpp/043.MultiplyStrings/MultiplyStrings.cpp)|Medium|
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN1.cpp)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
