@@ -2,38 +2,41 @@
 解体思路：
     累乘
     注意溢出
-
-时间复杂度分析：O(logn)
 */
+
+// O(log n)
+// Runtime Beats 100%
 
 #include <cassert>
 #include <cstdlib>
 #include <iostream>
-#include <limits>
 
 class Solution {
 public:
     double myPow(double x, int n) {
-        double res = 1.0;
+        bool sign = false;
+
+        // deal with overflow
+        // if n = -2^31, then -n = 2^31, which is out of range for int
+        unsigned int exp = n;
         if (n < 0) {
-            x = 1 / x;
-            if (n == std::numeric_limits<int>::min()) {
-                n = std::numeric_limits<int>::max();
-                res = x;
-            } else {
-                n = -n;
-            }
+            // handle leetcode runtime error:
+            // negation of -2147483648 cannot be represented in type 'int';
+            // cast to an unsigned type to negate this value to itself
+            // exp = -n
+            exp = (unsigned int)(-(long long)n);
+            sign = true;
         }
 
-        double pow = 1;
-        while (n != 0) {
-            if (n & 1) {
-                pow *= x;
+        double result = 1.0;
+        while (exp) {
+            if (exp & 1) {
+                result *= x;
             }
+            exp >>= 1;
             x *= x;
-            n >>= 1;
         }
-        return pow * res;
+        return sign ? 1 / result : result;
     }
 };
 

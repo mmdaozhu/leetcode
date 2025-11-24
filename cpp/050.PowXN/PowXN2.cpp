@@ -2,9 +2,10 @@
 解体思路：
     分治&递归
     注意溢出
-
-时间复杂度分析：O(logn)
 */
+
+// O(log n)
+// Runtime Beats 100%
 
 #include <cassert>
 #include <cstdlib>
@@ -19,6 +20,8 @@ public:
         } else if (n == 1) {
             return x;
         } else if (n < 0) {
+            // deal with overflow
+            // if n = -2^31, then -n = 2^31, which is out of range for int
             if (n == std::numeric_limits<int>::min()) {
                 return 1 / myPow(x, std::numeric_limits<int>::max()) / x;
             } else {

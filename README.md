@@ -41,9 +41,11 @@ LeetCode
 |039|[Combination Sum](https://leetcode.com/problems/combination-sum/)| [C++](./cpp/039.CombinationSum/CombinationSum.cpp)|Medium|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./cpp/041.FirstMissingPositive/FirstMissingPositive.cpp)|Hard|
 |043|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [C++](./cpp/043.MultiplyStrings/MultiplyStrings.cpp)|Medium|
-|046|[Permutations](https://leetcode.com/problems/permutations/)| [C++](./cpp/046.Permutations/Permutations.cpp)|Medium|
-|047|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [C++](./cpp/047.PermutationsII/PermutationsII.cpp)|Hard|
-|050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN1.cpp)|Medium|
+|046|[Permutations](https://leetcode.com/problems/permutations/)| [C++](./cpp/046.Permutations/Permutations.cpp), [C++](./cpp/046.Permutations/Permutations1.cpp)|Medium|
+|047|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [C++](./cpp/047.PermutationsII/PermutationsII.cpp)|Medium|
+|048|[Rotate Image](https://leetcode.com/problems/rotate-image/)| [C++](./cpp/048.RotateImage/RotateImage.cpp)|Medium|
+|049|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
+|050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN1.cpp), [C++](./cpp/050.PowXN/PowXN2.cpp), [Python](./python3/050.PowXN/PowXN.py)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
