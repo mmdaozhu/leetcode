@@ -4,7 +4,7 @@
 #include <vector>
 
 /*
-解体思路：
+解题思路：
     动态规划
 
     动态规划方程：dp[i] = min{dp[i-coins[j]]}+1

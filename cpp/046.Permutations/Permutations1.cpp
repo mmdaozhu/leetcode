@@ -1,5 +1,5 @@
 /*
-解体思路：
+解题思路：
         Take each element in array to the first place.
         pos = 0     [1, 2, 3]
 

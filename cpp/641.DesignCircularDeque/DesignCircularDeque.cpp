@@ -2,7 +2,7 @@
 #include <iostream>
 
 /*
-解体思路：
+解题思路：
     设计循环双端队列最关键的是判空和判满的条件。
     判空：front == rear;
     判满：(rear + 1) % size == front;

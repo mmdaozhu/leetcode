@@ -1,3 +1,8 @@
+/*
+解题思路：
+    快慢指针
+*/
+
 // O(n)
 // Runtime Beats 100.00%
 
@@ -16,28 +21,24 @@ struct ListNode {
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        auto cur = head;
-        int len = 0;
-        while (cur != nullptr) {
-            cur = cur->next;
-            len++;
+        ListNode dummy(0);
+        dummy.next = head;
+        head = &dummy;
+
+        auto fast = head, slow = head;
+        int i = 0;
+        while (i < n + 1) {
+            fast = fast->next;
+            i++;
         }
 
-        int target = len - n + 1;
-
-        ListNode* prev = new ListNode();
-        prev->next = head;
-
-        cur = prev;
-        auto p = cur->next;
-
-        while (target - 1 != 0) {
-            cur = cur->next;
-            p = p->next;
-            target--;
+        while (fast) {
+            fast = fast->next;
+            slow = slow->next;
         }
-        cur->next = p->next;
-        return prev->next;
+
+        slow->next = slow->next->next;
+        return head->next;
     }
 };
 

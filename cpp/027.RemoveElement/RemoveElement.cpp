@@ -1,3 +1,8 @@
+/*
+解题思路：
+    快慢指针
+*/
+
 // O(n)
 // Runtime Beats 100.00%
 
@@ -8,10 +13,6 @@
 class Solution {
 public:
     int removeElement(std::vector<int>& nums, int val) {
-        if (nums.size() == 0) {
-            return 0;
-        }
-        
         int pos = 0;
         for (int i = 0; i < nums.size(); i++) {
             if (nums[i] != val) {

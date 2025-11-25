@@ -48,6 +48,7 @@ LeetCode
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN1.cpp), [C++](./cpp/050.PowXN/PowXN2.cpp), [Python](./python3/050.PowXN/PowXN.py)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
+|054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt(x)/Sqrt(x).cpp)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|

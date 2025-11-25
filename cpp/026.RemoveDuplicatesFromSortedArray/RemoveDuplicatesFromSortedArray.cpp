@@ -1,3 +1,8 @@
+/*
+解题思路：
+    快慢指针
+*/
+
 // O(n)
 // Runtime Beats 100.00%
 
@@ -8,10 +13,6 @@
 class Solution {
 public:
     int removeDuplicates(std::vector<int>& nums) {
-        if (nums.size() == 1) {
-            return 1;
-        }
-
         int pos = 0;
         for (int i = 0; i < nums.size() - 1; i++) {
             if (nums[i] != nums[i + 1]) {

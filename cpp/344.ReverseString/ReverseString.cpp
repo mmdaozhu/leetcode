@@ -3,7 +3,7 @@
 #include <vector>
 
 /*
-解体思路：
+解题思路：
     因为vector是顺序存储的，做reverse直接用索引替换就好了。
 
 时间复杂度分析：O(n)

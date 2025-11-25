@@ -1,5 +1,5 @@
 /*
-解体思路：
+解题思路：
     可以类比https://leetcode.com/problems/two-sum/ 的思路，但是会超时。
 
     1.排序

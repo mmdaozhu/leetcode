@@ -3,7 +3,7 @@
 #include <string>
 
 /*
-解体思路：
+解题思路：
      ****the*sky**is*blue**
      1.**eulb*si**yks*eht**** (swap)
      2.**eulb*si**yks*eht**** (swap,[0,6))

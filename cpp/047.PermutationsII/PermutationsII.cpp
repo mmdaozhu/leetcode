@@ -1,5 +1,5 @@
 /*
-解体思路：
+解题思路：
         参考Permutations
         sort the array [pos..n].
         skip the same number.

@@ -4,7 +4,7 @@
 #include <vector>
 
 /*
-解体思路：
+解题思路：
     动态规划
     动态规划方程：min_dist(i, j) = w[i][j] + min(min_dist(i-1, j-1), min_dist(i-1, j))
     从底向上递推
