@@ -1,3 +1,8 @@
+/*
+解题思路：
+    双指针
+*/
+
 // O(n)
 // Runtime Beats 100.00%
 
@@ -16,39 +21,23 @@ struct ListNode {
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        if (list1 == nullptr) {
-            return list2;
-        }
-        if (list2 == nullptr) {
-            return list1;
-        }
+        ListNode *p1 = list1, *p2 = list2;
+        ListNode dummy(0);
+        ListNode* prev = &dummy;
 
-        ListNode* head = new ListNode;
-        ListNode* p = head;
-        ListNode* p1 = list1;
-        ListNode* p2 = list2;
-        while (p1 != nullptr && p2 != nullptr) {
+        while (p1 && p2) {
             if (p1->val < p2->val) {
-                ListNode* node = new ListNode(p1->val);
-                p->next = node;
+                prev->next = p1;
                 p1 = p1->next;
             } else {
-                ListNode* node = new ListNode(p2->val);
-                p->next = node;
+                prev->next = p2;
                 p2 = p2->next;
             }
-            p = p->next;
+            prev = prev->next;
         }
 
-        ListNode* last = p1 == nullptr ? p2 : p1;
-        while (last) {
-            ListNode* node = new ListNode(last->val);
-            p->next = node;
-            last = last->next;
-            p = p->next;
-        }
-
-        return head->next;
+        prev->next = p1 ? p1 : p2;
+        return dummy.next;
     }
 };
 
