@@ -1,12 +1,5 @@
-
-/*
-解题思路：
-    1.按行搜索
-    2.按列搜索
-    3.按九宫格搜索
-
-时间复杂度分析：O(n)
-*/
+// O(1)
+// Runtime Beats 100.00%
 
 #include <cassert>
 #include <iostream>
@@ -16,51 +9,30 @@
 class Solution {
 public:
     bool isValidSudoku(std::vector<std::vector<char>>& board) {
-        std::unordered_set<char> set;
-        for (const auto& row : board) {
-            for (const auto& c : row) {
-                if (c != '.') {
-                    if (set.find(c) == set.end()) {
-                        set.insert(c);
-                    } else {
-                        return false;
-                    }
+        std::vector<std::unordered_set<char>> row(9), col(9), box(9);
+
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                char c = board[i][j];
+                if (c == '.') {
+                    continue;
                 }
+
+                // i / 3 可以得到当前处于第几块“行区块”
+                // (i / 3) * 3 把行区块变换成如下序号起点
+                // j / 3 得到该行区块中的第几个方块
+
+                int b = (i / 3) * 3 + j / 3;
+                if (row[i].count(c) || col[j].count(c) || box[b].count(c)) {
+                    return false;
+                }
+
+                row[i].insert(c);
+                col[j].insert(c);
+                box[b].insert(c);
             }
-            set.clear();
         }
 
-        for (int i = 0; i < board[0].size(); i++) {
-            for (int j = 0; j < board.size(); j++) {
-                if (board[j][i] != '.') {
-                    if (set.find(board[j][i]) == set.end()) {
-                        set.insert(board[j][i]);
-                    } else {
-                        return false;
-                    }
-                }
-            }
-            set.clear();
-        }
-
-        for (int i = 0; i < 9; i += 3) {
-            for (int j = 0; j < 9; j += 3) {
-                for (int dx = 0; dx < 3; dx++) {
-                    for (int dy = 0; dy < 3; dy++) {
-                        int x = i + dx;
-                        int y = j + dy;
-                        if (board[x][y] != '.') {
-                            if (set.find(board[x][y]) == set.end()) {
-                                set.insert(board[x][y]);
-                            } else {
-                                return false;
-                            }
-                        }
-                    }
-                }
-                set.clear();
-            }
-        }
         return true;
     }
 };

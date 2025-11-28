@@ -35,7 +35,7 @@ LeetCode
 |033|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./cpp/033.SearchInRotatedSortedArray/SearchInRotatedSortedArray.cpp)|Medium|
 |034|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)| [C++](./cpp/034.SearchForRange/SearchForRange.cpp)|Medium|
 |035|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [C++](./cpp/035.SearchInsertPosition/SearchInsertPosition.cpp)|Medium|
-|036|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [C++](./cpp/036.ValidSudoku/ValidSudoku.cpp)|Medium|
+|036|[Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| [C++](./cpp/036.ValidSudoku/ValidSudoku.cpp), [Python](./python3/036.ValidSudoku/ValidSudoku.py), [Java](./java/036.ValidSudoku/ValidSudoku.java)|Medium|
 |037|[Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)| [C++](./cpp/037.SudokuSolver/SudokuSolver.cpp)|Hard|
 |038|[Count and Say](https://leetcode.com/problems/count-and-say/)| [C++](./cpp/038.CountAndSay/CountAndSay.cpp)|Medium|
 |039|[Combination Sum](https://leetcode.com/problems/combination-sum/)| [C++](./cpp/039.CombinationSum/CombinationSum.cpp)|Medium|
