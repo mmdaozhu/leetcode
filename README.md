@@ -51,7 +51,10 @@ LeetCode
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [C++](./cpp/058.LengthOfLastWord/LengthOfLastWord.cpp)|Easy|
 |059|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)| [C++](./cpp/059.SpiralMatrixII/SpiralMatrixII.cpp)|Medium|
+|061|[Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./cpp/061.RotateList/RotateList.cpp)|Medium|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
+|066|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./cpp/066.PlusOne/PlusOne.cpp)|Easy|
+|067|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./cpp/067.AddBinary/AddBinary.cpp)|Easy|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt(x)/Sqrt(x).cpp)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
