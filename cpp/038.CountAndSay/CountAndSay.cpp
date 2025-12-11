@@ -1,4 +1,4 @@
-// O(n*n)
+// O(n*L) L = 每层平均字符串长度（逐渐增长）
 // Runtime Beats 28.78%
 
 #include <cassert>

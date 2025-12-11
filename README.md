@@ -55,7 +55,7 @@ LeetCode
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |066|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./cpp/066.PlusOne/PlusOne.cpp)|Easy|
 |067|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./cpp/067.AddBinary/AddBinary.cpp)|Easy|
-|069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt(x)/Sqrt(x).cpp)|Easy|
+|069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|

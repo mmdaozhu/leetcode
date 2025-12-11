@@ -1,3 +1,8 @@
+/*
+解题思路：
+    贪心算法
+*/
+
 // O(n)
 // Runtime Beats 26.76%
 #include <cassert>
