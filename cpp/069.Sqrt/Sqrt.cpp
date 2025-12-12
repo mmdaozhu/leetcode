@@ -1,11 +1,10 @@
 /*
 解题思路：
-    两分查找
+    二分查找
     类似于二分查找的变体：查找最后一个小于等于给定值的元素
-
 */
 
-// O(logn)
+// O(log n)
 // Runtime Beats 100%
 
 #include <cassert>

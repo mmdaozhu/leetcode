@@ -6,23 +6,65 @@
     f(1) = 1
     转换成斐波那契数列求和问题
 
-时间复杂度分析：O(n)
+    利用矩阵相乘优化算法
+
+    [f(n)  ] = [1 1] * [f(n-1) ]
+    [f(n-1 ]   [1 0]   [f(n-2) ]
+
+时间复杂度分析：O(log(n))
 */
 
 #include <cassert>
 #include <iostream>
 
+class Matrix {
+public:
+    friend Matrix operator*(const Matrix& x1, const Matrix& x2);
+    Matrix(int i, int j, int k, int l) : a11(i), a12(j), a21(k), a22(l) {}
+
+    void print() {
+        std::cout << "a11: " << a11 << std::endl;
+        std::cout << "a12: " << a12 << std::endl;
+        std::cout << "a21: " << a21 << std::endl;
+        std::cout << "a22: " << a22 << std::endl;
+    }
+
+    int A11() { return a11; }
+    int A12() { return a12; }
+
+private:
+    int a11;
+    int a12;
+    int a21;
+    int a22;
+};
+
+Matrix operator*(const Matrix& x1, const Matrix& x2) {
+    return Matrix(x1.a11 * x2.a11 + x1.a12 * x2.a21, x1.a11 * x2.a12 + x1.a12 * x2.a22,
+                  x1.a21 * x2.a11 + x1.a22 * x2.a21, x1.a21 * x2.a12 + x1.a22 * x2.a22);
+}
+
 class Solution {
 public:
     int climbStairs(int n) {
-        auto first = 1;
-        auto second = 1;
-        for (int i = 1; i < n; i++) {
-            auto sum = first + second;
-            first = second;
-            second = sum;
+        if (n == 1 || n == 2) {
+            return n;
         }
-        return second;
+
+        Matrix result = pow(Matrix(1, 1, 1, 0), n - 2);
+        return result.A11() * 2 + result.A12() * 1;
+    }
+
+    Matrix pow(const Matrix& x, int n) {
+        if (n == 1) {
+            return x;
+        }
+
+        if (n & 1) {
+            return x * pow(x * x, n / 2);
+        } else {
+            return pow(x * x, n / 2);
+        }
     }
 };
 
