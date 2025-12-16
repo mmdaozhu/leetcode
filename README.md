@@ -58,6 +58,8 @@ LeetCode
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp), [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
+|080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./cpp/080.RemoveDuplicatesFromSortedArrayII/RemoveDuplicatesFromSortedArrayII.cpp)|Medium|
+|081|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./cpp/081.SearchInRotatedSortedArrayII/SearchInRotatedSortedArrayII.cpp)|Medium|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./cpp/104.MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree1.cpp)|Easy|
