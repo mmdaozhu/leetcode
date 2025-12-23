@@ -63,7 +63,9 @@ LeetCode
 |082|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [C++](./cpp/082.RemoveDuplicatesFromSortedListII/RemoveDuplicatesFromSortedListII.cpp)|Medium|
 |083|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [C++](./cpp/083.RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.cpp)|Easy|
 |086|[Partition List](https://leetcode.com/problems/partition-list/)| [C++](./cpp/086.PartitionList/PartitionList.cpp)|Medium|
-|098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
+|088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [C++](./cpp/088.MergeSortedArray/MergeSortedArray.cpp)|Easy|
+|094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| [C++](./cpp/094.BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.cpp)|Easy|
+|098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree.cpp), [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./cpp/104.MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree1.cpp)|Easy|
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)| [C++](./cpp/111.MinimumDepthOfBinaryTree/MinimumDepthOfBinaryTree1.cpp)|Easy|
