@@ -8,6 +8,7 @@ LeetCode
 |001|[Two Sum](https://leetcode.com/problems/two-sum/)| [C++](./cpp/001.TwoSum/TwoSum.cpp), [Python](./python3/001.TwoSum/TwoSum.py), [Go](./go/001.TwoSum/TwoSum.go)|Easy|
 |002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [C++](./cpp/002.AddTwoNumbers/AddTwoNumbers.cpp)|Medium|
 |003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](./cpp/003.LongestSubstringWithoutRepeatingCharacters/LongestSubstringWithoutRepeatingCharacters.cpp)|Medium|
+|004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| [C++](./cpp/004.MedianOfTwoSortedArrays/MedianOfTwoSortedArrays.cpp)|Hard|
 |005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [C++](./cpp/005.LongestPalindromicSubstring/LongestPalindromicSubstring.cpp)|Medium|
 |006|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)| [C++](./cpp/006.ZigZagConversion/ZigZagConversion.cpp)|Medium|
 |007|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)| [C++](./cpp/007.ReverseInteger/ReverseInteger.cpp)|Medium|
@@ -66,6 +67,7 @@ LeetCode
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [C++](./cpp/088.MergeSortedArray/MergeSortedArray.cpp)|Easy|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| [C++](./cpp/094.BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.cpp)|Easy|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree.cpp), [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
+|100|[Same Tree](https://leetcode.com/problems/same-tree/)| [C++](./cpp/100.SameTree/SameTree.cpp)|Easy|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./cpp/104.MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree1.cpp)|Easy|
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)| [C++](./cpp/111.MinimumDepthOfBinaryTree/MinimumDepthOfBinaryTree1.cpp)|Easy|
