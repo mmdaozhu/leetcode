@@ -54,7 +54,6 @@ void test1() {
     std::vector<int> nums1{1, 3};
     std::vector<int> nums2{2};
     Solution s;
-    std::cout << s.findMedianSortedArrays(nums1, nums2) << std::endl;
     assert(s.findMedianSortedArrays(nums1, nums2) == 2.0);
 }
 
@@ -62,8 +61,6 @@ void test2() {
     std::vector<int> nums1{1, 2};
     std::vector<int> nums2{3, 4};
     Solution s;
-
-    std::cout << s.findMedianSortedArrays(nums1, nums2) << std::endl;
     assert(s.findMedianSortedArrays(nums1, nums2) == 2.5);
 }
 

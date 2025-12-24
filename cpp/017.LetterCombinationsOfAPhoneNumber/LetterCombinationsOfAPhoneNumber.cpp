@@ -1,4 +1,4 @@
-// O(n*n)
+// Ω(n × kⁿ)
 // Runtime Beats 100.00%
 
 #include <cassert>
@@ -44,7 +44,7 @@ public:
 };
 
 void test1() {
-    std::string digits = "123";
+    std::string digits = "23";
     std::vector<std::string> result{"ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"};
     Solution s;
     assert(s.letterCombinations(digits) == result);
