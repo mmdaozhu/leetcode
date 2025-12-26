@@ -1,15 +1,14 @@
 /*
 解题思路：
-    由于每个链表都是有序的，我们只要依次比较链表头，取出最小值的链表头。
-    然后在最小值链表头所在链表取下一个元素，重复上述过程。
-
-时间复杂度分析：O(k*n)
+    优先队列（小顶堆）
 */
 
-#include <assert.h>
+// O(nlogk)
+// Runtime Beats 100.00%
 
+#include <cassert>
 #include <iostream>
-#include <limits>
+#include <queue>
 #include <vector>
 
 struct ListNode {
@@ -20,69 +19,81 @@ struct ListNode {
     ListNode(int x, ListNode* next) : val(x), next(next) {}
 };
 
+struct Compare {
+    bool operator()(ListNode* a, ListNode* b) const {
+        return a->val > b->val;
+    }
+};
+
 class Solution {
 public:
     ListNode* mergeKLists(std::vector<ListNode*>& lists) {
-        if (lists.size() == 0) {
-            return nullptr;
-        }
-        if (lists.size() == 1) {
-            return lists[0];
-        }
+        ListNode dummy(0);
+        ListNode* p = &dummy;
 
-        ListNode* res = new ListNode(0);
-        ListNode* connect = res;
-        std::vector<ListNode*> pv = lists;
-        while (true) {
-            int min = std::numeric_limits<int>::max();
-            int index = -1;
-            for (size_t i = 0; i < pv.size(); i++) {
-                if (pv[i] != nullptr && pv[i]->val < min) {
-                    min = pv[i]->val;
-                    index = i;
-                }
-            }
+        std::priority_queue<ListNode*, std::vector<ListNode*>, Compare> pq;
 
-            if (index != -1) {
-                connect->next = pv[index];
-                connect = connect->next;
-                pv[index] = pv[index]->next;
-            } else {
-                break;
+        for (auto list : lists) {
+            if (list != nullptr) {
+                pq.push(list);
             }
         }
-        return res->next;
+
+        while (!pq.empty()) {
+            ListNode* node = pq.top();
+            p->next = node;
+            p = p->next;
+            pq.pop();
+            if (node->next != nullptr) {
+                pq.push(node->next);
+            }
+        }
+        return dummy.next;
     }
 };
 
 void test1() {
-    ListNode* L1 = new ListNode(1);
-    ListNode* L12 = new ListNode(4);
-    ListNode* L123 = new ListNode(5);
-    L1->next = L12;
-    L12->next = L123;
-    L123->next = nullptr;
+    ListNode* l1 = new ListNode(1);
+    l1->next = new ListNode(4);
+    l1->next->next = new ListNode(5);
 
-    ListNode* L2 = new ListNode(1);
-    ListNode* L22 = new ListNode(3);
-    ListNode* L223 = new ListNode(4);
-    L2->next = L22;
-    L22->next = L223;
-    L223->next = nullptr;
+    ListNode* l2 = new ListNode(1);
+    l2->next = new ListNode(3);
+    l2->next->next = new ListNode(4);
 
-    std::vector<ListNode*> lists;
-    lists.push_back(L1);
-    lists.push_back(L2);
+    ListNode* l3 = new ListNode(2);
+    l3->next = new ListNode(6);
 
+    std::vector<ListNode*> lists{l1, l2, l3};
     Solution s;
-    ListNode* res = s.mergeKLists(lists);
-    while (res) {
-        std::cout << res->val << std::endl;
-        res = res->next;
-    }
+    ListNode* result = s.mergeKLists(lists);
+    assert(result->val == 1);
+    assert(result->next->val == 1);
+    assert(result->next->next->val == 2);
+    assert(result->next->next->next->val == 3);
+    assert(result->next->next->next->next->val == 4);
+    assert(result->next->next->next->next->next->val == 4);
+    assert(result->next->next->next->next->next->next->val == 5);
+    assert(result->next->next->next->next->next->next->next->val == 6);
+}
+
+void test2() {
+    std::vector<ListNode*> lists;
+    Solution s;
+    ListNode* result = s.mergeKLists(lists);
+    assert(result == nullptr);
+}
+
+void test3() {
+    std::vector<ListNode*> lists{nullptr};
+    Solution s;
+    ListNode* result = s.mergeKLists(lists);
+    assert(result == nullptr);
 }
 
 int main() {
     test1();
+    test2();
+    test3();
     return 0;
 }
