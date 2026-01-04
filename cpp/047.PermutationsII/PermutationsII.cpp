@@ -1,19 +1,10 @@
 /*
 解题思路：
-        参考Permutations
-        sort the array [pos..n].
-        skip the same number.
-
-        pos = 0     [1, 1, 2]
-
-        pos = 1     [1, 1, 2]  ==>  [2, 1, 1]
-
-        pos = 2     [1, 1, 2]  ==>  [1, 2, 1]
-                    [2, 1, 1]
+    回溯
 */
 
 // O(n*n!)
-// Runtime Beats 65.45%
+// Runtime Beats 50.43%
 
 #include <algorithm>
 #include <cassert>
@@ -23,34 +14,41 @@
 class Solution {
 public:
     std::vector<std::vector<int>> permuteUnique(std::vector<int>& nums) {
-        std::vector<std::vector<int>> results;
-        results.push_back(nums);
-
-        for (int pos = 0; pos < nums.size(); pos++) {
-            int size = results.size();
-            for (int i = 0; i < size; i++) {
-                std::sort(results[i].begin() + pos, results[i].end());
-
-                for (int j = pos + 1; j < results[i].size(); j++) {
-                    auto v = results[i];
-                    if (j > 0 && v[j] == v[j - 1]) {
-                        continue;
-                    }
-
-                    int t = v[j];
-                    v[j] = v[pos];
-                    v[pos] = t;
-                    results.push_back(v);
-                }
-            }
-        }
+        std::sort(nums.begin(), nums.end());
+        std::vector<bool> used(nums.size(), false);
+        backtrace(nums, used);
         return results;
     }
+
+    void backtrace(std::vector<int>& nums, std::vector<bool>& used) {
+        if (path.size() == nums.size()) {
+            results.push_back(path);
+            return;
+        }
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (used[i]) {
+                continue;
+            }
+            if (i > 0 && nums[i - 1] == nums[i] && !used[i - 1]) {
+                continue;
+            }
+            path.push_back(nums[i]);
+            used[i] = true;
+            backtrace(nums, used);
+            used[i] = false;
+            path.pop_back();
+        }
+    }
+
+private:
+    std::vector<std::vector<int>> results;
+    std::vector<int> path;
 };
 
 void test1() {
     std::vector<int> nums{1, 1, 2};
-    std::vector<std::vector<int>> results{{1, 1, 2}, {2, 1, 1}, {1, 2, 1}};
+    std::vector<std::vector<int>> results{{1, 1, 2}, {1, 2, 1}, {2, 1, 1}};
     Solution s;
     assert(s.permuteUnique(nums) == results);
 }
