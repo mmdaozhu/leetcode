@@ -1,6 +1,6 @@
 /*
 解题思路：
-    累乘
+    分治&递归
     注意溢出
 */
 
@@ -10,33 +10,30 @@
 #include <cassert>
 #include <cstdlib>
 #include <iostream>
+#include <limits>
 
 class Solution {
 public:
     double myPow(double x, int n) {
-        bool sign = false;
-
-        // deal with overflow
-        // if n = -2^31, then -n = 2^31, which is out of range for int
-        unsigned int exp = n;
-        if (n < 0) {
-            // handle leetcode runtime error:
-            // negation of -2147483648 cannot be represented in type 'int';
-            // cast to an unsigned type to negate this value to itself
-            // exp = -n
-            exp = (unsigned int)(-(long long)n);
-            sign = true;
-        }
-
-        double result = 1.0;
-        while (exp) {
-            if (exp & 1) {
-                result *= x;
+        if (n == 0) {
+            return 1;
+        } else if (n == 1) {
+            return x;
+        } else if (n < 0) {
+            // deal with overflow
+            // if n = -2^31, then -n = 2^31, which is out of range for int
+            if (n == std::numeric_limits<int>::min()) {
+                return 1 / myPow(x, std::numeric_limits<int>::max()) / x;
+            } else {
+                return 1 / myPow(x, -n);
             }
-            exp >>= 1;
-            x *= x;
         }
-        return sign ? 1 / result : result;
+
+        if (n % 2 == 1) {
+            return myPow(x, n - 1) * x;
+        } else {
+            return myPow(x * x, n / 2);
+        }
     }
 };
 

@@ -49,7 +49,7 @@ LeetCode
 |047|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [C++](./cpp/047.PermutationsII/PermutationsII.cpp), [C++](./cpp/047.PermutationsII/PermutationsII1.cpp)|Medium|
 |048|[Rotate Image](https://leetcode.com/problems/rotate-image/)| [C++](./cpp/048.RotateImage/RotateImage.cpp)|Medium|
 |049|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
-|050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN1.cpp), [C++](./cpp/050.PowXN/PowXN2.cpp), [Python](./python3/050.PowXN/PowXN.py)|Medium|
+|050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [C++](./go/050.PowXN/PowXN1.go)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
