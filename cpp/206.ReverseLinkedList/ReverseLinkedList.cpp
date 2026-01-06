@@ -1,18 +1,20 @@
 /*
 解题思路：
-    p(prev)
-    c(cur)
-    r(rear)
-            1   >   2   >   3   >   4   >   5   >   NULL
-    p       c
-    p       c   >   r   (第一步)
-    p   <   c       r   (第二步)
-        <   p(c)    r   (第三步)
-        <   p       c   (第四步)
-
-时间复杂度分析：O(n)
+        p(prev)
+        c(cur)
+        r(rear)
+                1   >   2   >   3   >   4   >   5   >   NULL
+        p       c
+        p       c   >   r   (第一步)
+        p   <   c       r   (第二步)
+            <   p(c)    r   (第三步)
+            <   p       c   (第四步)
 */
 
+// O(n)
+// Runtime Beats 100%
+
+#include <cassert>
 #include <iostream>
 
 /**
@@ -42,21 +44,39 @@ public:
 };
 
 void test1() {
-    ListNode five(5);
-    ListNode four(4, &five);
-    ListNode three(3, &four);
-    ListNode two(2, &three);
-    ListNode one(1, &two);
-
+    ListNode* head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+    head->next->next->next = new ListNode(4);
+    head->next->next->next->next = new ListNode(5);
     Solution s;
-    auto p_node = s.reverseList(&one);
-    while (p_node) {
-        std::cout << p_node->val << std::endl;
-        p_node = p_node->next;
-    }
+    ListNode* result = s.reverseList(head);
+    assert(result->val == 5);
+    assert(result->next->val == 4);
+    assert(result->next->next->val == 3);
+    assert(result->next->next->next->val == 2);
+    assert(result->next->next->next->next->val == 1);
+}
+
+void test2() {
+    ListNode* head = new ListNode(1);
+    head->next = new ListNode(2);
+    Solution s;
+    ListNode* result = s.reverseList(head);
+    assert(result->val == 2);
+    assert(result->next->val == 1);
+}
+
+void test3() {
+    ListNode* head = nullptr;
+    Solution s;
+    ListNode* result = s.reverseList(head);
+    assert(result == nullptr);
 }
 
 int main() {
     test1();
+    test2();
+    test3();
     return 0;
 }

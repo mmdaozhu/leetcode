@@ -29,6 +29,7 @@ LeetCode
 |022|[Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)| [C++](./cpp/022.GenerateParentheses/GenerateParentheses.cpp), [Python](./python3/022.GenerateParentheses/GenerateParentheses.py)|Medium|
 |023|[Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)| [C++](./cpp/023.MergekSortedLists/MergekSortedLists.cpp)|Hard|
 |024|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)| [C++](./cpp/024.SwapNodesInPairs/SwapNodesInPairs.cpp), [Python](./python3/024.SwapNodesInPairs/SwapNodesInPairs.py), [Go](./go/024.SwapNodesInPairs/SwapNodesInPairs.go)|Medium|
+|025|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./cpp/025.ReverseNodesInKGroup/ReverseNodesInKGroup.cpp)|Hard|
 |026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./cpp/026.RemoveDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.cpp)|Easy|
 |027|[Remove Element](https://leetcode.com/problems/remove-element/)| [C++](./cpp/027.RemoveElement/RemoveElement.cpp)|Easy|
 |028|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)| [C++](./cpp/028.ImplementstrStr/ImplementstrStr.cpp)|Easy|
@@ -49,7 +50,7 @@ LeetCode
 |047|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [C++](./cpp/047.PermutationsII/PermutationsII.cpp), [C++](./cpp/047.PermutationsII/PermutationsII1.cpp)|Medium|
 |048|[Rotate Image](https://leetcode.com/problems/rotate-image/)| [C++](./cpp/048.RotateImage/RotateImage.cpp)|Medium|
 |049|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
-|050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [C++](./go/050.PowXN/PowXN1.go)|Medium|
+|050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [Go](./go/050.PowXN/PowXN1.go)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
@@ -89,7 +90,7 @@ LeetCode
 |188|[Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)| [C++](./cpp/188.BestTimeToBuyAndSellStockIV/BestTimeToBuyAndSellStockIV.cpp)|Hard|
 |191|[Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)| [C++](./cpp/191.NumberOf1Bits/NumberOf1Bits.cpp)|Easy|
 |200|[Number of Islands](https://leetcode.com/problems/number-of-islands/)| [C++](./cpp/200.NumberofIslands/NumberofIslands1.cpp)|Medium|
-|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./cpp/206.ReverseLinkedList/ReverseLinkedList.cpp)|Easy|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)| [C++](./cpp/206.ReverseLinkedList/ReverseLinkedList.cpp), [Python](./python3/206.ReverseLinkedList/ReverseLinkedList.py), [Go](./go/206.ReverseLinkedList/ReverseLinkedList.go)|Easy|
 |208|[Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)| [C++](./cpp/208.ImplementTrie/ImplementTrie.cpp)|Medium|
 |212|[Word Search II](https://leetcode.com/problems/word-search-ii/)| [C++](./cpp/212.WordSearchII/WordSearchII.cpp)|Hard|
 |225|[Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)| [C++](./cpp/225.ImplementStackUsingQueues/ImplementStackUsingQueues.cpp)|Easy|
