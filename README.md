@@ -34,6 +34,7 @@ LeetCode
 |027|[Remove Element](https://leetcode.com/problems/remove-element/)| [C++](./cpp/027.RemoveElement/RemoveElement.cpp)|Easy|
 |028|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)| [C++](./cpp/028.ImplementstrStr/ImplementstrStr.cpp)|Easy|
 |029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [C++](./cpp/029.DivideTwoInt/DivideTwoInt.cpp)|Medium|
+|030|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./cpp/030.SubstringWithConcatenationOfAllWords/SubstringWithConcatenationOfAllWords.cpp)|Hard|
 |031|[Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./cpp/031.NextPermutation/NextPermutation.cpp)|Medium|
 |033|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./cpp/033.SearchInRotatedSortedArray/SearchInRotatedSortedArray.cpp)|Medium|
 |034|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)| [C++](./cpp/034.SearchForRange/SearchForRange.cpp)|Medium|
@@ -53,7 +54,10 @@ LeetCode
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [Go](./go/050.PowXN/PowXN1.go)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
+|053|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| [C++](./cpp/053.MaximumSubarray/MaximumSubarray.cpp)|Medium|
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
+|055|[Jump Game](https://leetcode.com/problems/jump-game/)| [C++](./cpp/055.JumpGame/JumpGame.cpp)|Medium|
+|056|[Merge Intervals](https://leetcode.com/problems/merge-intervals/)| [C++](./cpp/056.MergeIntervals/MergeIntervals.cpp)|Medium|
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [C++](./cpp/058.LengthOfLastWord/LengthOfLastWord.cpp)|Easy|
 |059|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)| [C++](./cpp/059.SpiralMatrixII/SpiralMatrixII.cpp)|Medium|
 |061|[Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./cpp/061.RotateList/RotateList.cpp)|Medium|
