@@ -3,7 +3,7 @@
     贪心
 */
 
-// O(n)
+// O(n log n)
 // Runtime Beats 47.72%
 
 #include <algorithm>
