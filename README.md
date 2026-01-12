@@ -36,6 +36,7 @@ LeetCode
 |029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [C++](./cpp/029.DivideTwoInt/DivideTwoInt.cpp)|Medium|
 |030|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./cpp/030.SubstringWithConcatenationOfAllWords/SubstringWithConcatenationOfAllWords.cpp)|Hard|
 |031|[Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./cpp/031.NextPermutation/NextPermutation.cpp)|Medium|
+|032|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [C++](./cpp/032.LongestValidParentheses/LongestValidParentheses.cpp)|Hard|
 |033|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./cpp/033.SearchInRotatedSortedArray/SearchInRotatedSortedArray.cpp)|Medium|
 |034|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)| [C++](./cpp/034.SearchForRange/SearchForRange.cpp)|Medium|
 |035|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [C++](./cpp/035.SearchInsertPosition/SearchInsertPosition.cpp)|Medium|

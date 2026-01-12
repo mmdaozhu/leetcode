@@ -1,0 +1,9 @@
+BasedOnStyle: Google
+AccessModifierOffset: -4
+AlignTrailingComments: true
+AllowShortFunctionsOnASingleLine: Empty
+ColumnLimit: 120
+IndentWidth: 4
+PackConstructorInitializers: NextLine
+# clang-format off
+# clang-format on
