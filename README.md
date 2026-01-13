@@ -32,7 +32,7 @@ LeetCode
 |025|[Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)| [C++](./cpp/025.ReverseNodesInKGroup/ReverseNodesInKGroup.cpp)|Hard|
 |026|[Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)| [C++](./cpp/026.RemoveDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.cpp)|Easy|
 |027|[Remove Element](https://leetcode.com/problems/remove-element/)| [C++](./cpp/027.RemoveElement/RemoveElement.cpp)|Easy|
-|028|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)| [C++](./cpp/028.ImplementstrStr/ImplementstrStr.cpp)|Easy|
+|028|[Implement strStr()](https://leetcode.com/problems/implement-strstr/)| [C++](./cpp/028.ImplementstrStr/ImplementstrStr.cpp), [C++](./cpp/028.ImplementstrStr/ImplementstrStr1.cpp)|Easy|
 |029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [C++](./cpp/029.DivideTwoInt/DivideTwoInt.cpp)|Medium|
 |030|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./cpp/030.SubstringWithConcatenationOfAllWords/SubstringWithConcatenationOfAllWords.cpp)|Hard|
 |031|[Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./cpp/031.NextPermutation/NextPermutation.cpp)|Medium|
@@ -63,6 +63,7 @@ LeetCode
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [C++](./cpp/058.LengthOfLastWord/LengthOfLastWord.cpp)|Easy|
 |059|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)| [C++](./cpp/059.SpiralMatrixII/SpiralMatrixII.cpp)|Medium|
 |061|[Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./cpp/061.RotateList/RotateList.cpp)|Medium|
+|062|[Unique Paths](https://leetcode.com/problems/unique-paths/)| [C++](./cpp/062.UniquePaths/UniquePaths.cpp)|Medium|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |066|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./cpp/066.PlusOne/PlusOne.cpp)|Easy|
 |067|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./cpp/067.AddBinary/AddBinary.cpp)|Easy|
