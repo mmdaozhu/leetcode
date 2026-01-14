@@ -1,15 +1,18 @@
 /*
 解题思路：
-    深度优先遍历
-    判断皇后的攻击范围：
-        1. 列 col
-        2. 撇 row + col
-        3. 捺 row - col
+    深度优先遍历 + 回溯 + 位运算
 
-时间复杂度分析：O(n^n)
+    判断皇后的攻击范围：
+    1. 列 col
+    2. 撇 row + col
+    3. 捺 row - col
 */
 
+// O(n!)
+// Runtime Beats 32.83%
+
 #include <cassert>
+#include <cmath>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -21,34 +24,33 @@ public:
             return results;
         }
         std::vector<int> states;
-        DFS(n, 0, states);
+        DFS(n, 0, 0, 0, 0, states);
         return results;
     }
 
-    void DFS(int n, int row, std::vector<int>& states) {
+    void DFS(int n, int row, int cols, int pie, int na, std::vector<int>& states) {
         if (row == n) {
             std::vector<std::string> placement;
             for (const auto& v : states) {
                 std::string s(n, '.');
-                s[v] = 'Q';
+                s[n - 1 - log2(v)] = 'Q';
                 placement.emplace_back(s);
             }
             results.emplace_back(placement);
             return;
         }
-        for (int col = 0; col < n; col++) {
-            bool ok = true;
-            for (int i = 0; i < states.size(); i++) {
-                if (col == states[i] || row + col == states[i] + i || row - col == i - states[i]) {
-                    ok = false;
-                    break;
-                }
-            }
-            if (ok) {
-                states.emplace_back(col);
-                DFS(n, row + 1, states);
-                states.pop_back();
-            }
+
+        // 取出可以放的位置，0表示不可以放，1表示可以放
+        int bits = (~(cols | pie | na)) & ((1 << n) - 1);
+
+        while (bits) {
+            // 取到最底位的1
+            int p = bits & -bits;
+            states.emplace_back(p);
+            DFS(n, row + 1, cols | p, (pie | p) << 1, (na | p) >> 1, states);
+            states.pop_back();
+            // 去掉最底位的1
+            bits = bits & (bits - 1);
         }
     }
 
@@ -57,7 +59,7 @@ private:
 };
 
 void test1() {
-    std::vector<std::vector<std::string>> results{{".Q..", "...Q", "Q...", "..Q."}, {"..Q.", "Q...", "...Q", ".Q.."}};
+    std::vector<std::vector<std::string>> results{{"..Q.", "Q...", "...Q", ".Q.."}, {".Q..", "...Q", "Q...", "..Q."}};
     auto n = 4;
     Solution s;
     assert(s.solveNQueens(n) == results);

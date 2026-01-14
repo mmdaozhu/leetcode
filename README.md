@@ -46,6 +46,7 @@ LeetCode
 |039|[Combination Sum](https://leetcode.com/problems/combination-sum/)| [C++](./cpp/039.CombinationSum/CombinationSum.cpp)|Medium|
 |040|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [C++](./cpp/040.CombinationSumII/CombinationSumII.cpp)|Medium|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./cpp/041.FirstMissingPositive/FirstMissingPositive.cpp)|Hard|
+|042|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [C++](./cpp/042.TrappingRainWater/TrappingRainWater.cpp)|Hard|
 |043|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [C++](./cpp/043.MultiplyStrings/MultiplyStrings.cpp)|Medium|
 |045|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)| [C++](./cpp/045.JumpGameII/JumpGameII.cpp)|Medium|
 |046|[Permutations](https://leetcode.com/problems/permutations/)| [C++](./cpp/046.Permutations/Permutations.cpp), [C++](./cpp/046.Permutations/Permutations1.cpp)|Medium|
@@ -53,7 +54,7 @@ LeetCode
 |048|[Rotate Image](https://leetcode.com/problems/rotate-image/)| [C++](./cpp/048.RotateImage/RotateImage.cpp)|Medium|
 |049|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [Go](./go/050.PowXN/PowXN1.go)|Medium|
-|051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
+|051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens.cpp), [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
 |053|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| [C++](./cpp/053.MaximumSubarray/MaximumSubarray.cpp)|Medium|
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
