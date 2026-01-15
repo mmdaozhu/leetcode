@@ -55,7 +55,7 @@ LeetCode
 |049|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [Go](./go/050.PowXN/PowXN1.go)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens.cpp), [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
-|052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII1.cpp)|Hard|
+|052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII.cpp)|Hard|
 |053|[Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)| [C++](./cpp/053.MaximumSubarray/MaximumSubarray.cpp)|Medium|
 |054|[Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)| [C++](./cpp/054.SpiralMatrix/SpiralMatrix.cpp)|Medium|
 |055|[Jump Game](https://leetcode.com/problems/jump-game/)| [C++](./cpp/055.JumpGame/JumpGame.cpp)|Medium|
@@ -63,12 +63,13 @@ LeetCode
 |057|[Insert Interval](https://leetcode.com/problems/insert-interval/)| [C++](./cpp/057.InsertInterval/InsertInterval.cpp)|Medium|
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [C++](./cpp/058.LengthOfLastWord/LengthOfLastWord.cpp)|Easy|
 |059|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)| [C++](./cpp/059.SpiralMatrixII/SpiralMatrixII.cpp)|Medium|
+|060|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)| [C++](./cpp/060.PermutationSequence/PermutationSequence.cpp)|HARD|
 |061|[Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./cpp/061.RotateList/RotateList.cpp)|Medium|
 |062|[Unique Paths](https://leetcode.com/problems/unique-paths/)| [C++](./cpp/062.UniquePaths/UniquePaths.cpp)|Medium|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |066|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./cpp/066.PlusOne/PlusOne.cpp)|Easy|
 |067|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./cpp/067.AddBinary/AddBinary.cpp)|Easy|
-|069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp)|Easy|
+|069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp), [Go](./go/069.Sqrt/Sqrt.go)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp), [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
 |080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./cpp/080.RemoveDuplicatesFromSortedArrayII/RemoveDuplicatesFromSortedArrayII.cpp)|Medium|
