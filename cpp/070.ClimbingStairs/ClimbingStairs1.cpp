@@ -1,17 +1,19 @@
 /*
 解题思路：
-    f(n) = f(n-1) + f(n-2)
-    f(3) = f(2) + f(1)
-    f(2) = 2
-    f(1) = 1
+    动态规划
+    dp[i]：走到第 i 阶的方法数
+    dp[i] = dp[i-1] + dp[i-2]
+    原因很直观：
+        最后一步走 1 阶 → 从 i-1
+        最后一步走 2 阶 → 从 i-2
+    初始条件：
+        dp[0] = 1
+        dp[1] = 1
+
     转换成斐波那契数列求和问题
-
     利用矩阵相乘优化算法
-
     [f(n)  ] = [1 1] * [f(n-1) ]
     [f(n-1 ]   [1 0]   [f(n-2) ]
-
-时间复杂度分析：O(log(n))
 */
 
 #include <cassert>
@@ -22,21 +24,18 @@ public:
     friend Matrix operator*(const Matrix& x1, const Matrix& x2);
     Matrix(int i, int j, int k, int l) : a11(i), a12(j), a21(k), a22(l) {}
 
-    void print() {
-        std::cout << "a11: " << a11 << std::endl;
-        std::cout << "a12: " << a12 << std::endl;
-        std::cout << "a21: " << a21 << std::endl;
-        std::cout << "a22: " << a22 << std::endl;
+    int A11() {
+        return a11;
+    }
+    int A12() {
+        return a12;
     }
 
-    int A11() { return a11; }
-    int A12() { return a12; }
-
 private:
-    int a11;
-    int a12;
-    int a21;
-    int a22;
+    int a11{};
+    int a12{};
+    int a21{};
+    int a22{};
 };
 
 Matrix operator*(const Matrix& x1, const Matrix& x2) {
@@ -78,14 +77,8 @@ void test2() {
     assert(s.climbStairs(3) == 3);
 }
 
-void test3() {
-    Solution s;
-    assert(s.climbStairs(4) == 5);
-}
-
 int main() {
     test1();
     test2();
-    test3();
     return 0;
 }

@@ -63,14 +63,15 @@ LeetCode
 |057|[Insert Interval](https://leetcode.com/problems/insert-interval/)| [C++](./cpp/057.InsertInterval/InsertInterval.cpp)|Medium|
 |058|[Length of Last Word](https://leetcode.com/problems/length-of-last-word/)| [C++](./cpp/058.LengthOfLastWord/LengthOfLastWord.cpp)|Easy|
 |059|[Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)| [C++](./cpp/059.SpiralMatrixII/SpiralMatrixII.cpp)|Medium|
-|060|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)| [C++](./cpp/060.PermutationSequence/PermutationSequence.cpp)|HARD|
+|060|[Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)| [C++](./cpp/060.PermutationSequence/PermutationSequence.cpp)|Hard|
 |061|[Rotate List](https://leetcode.com/problems/rotate-list/)| [C++](./cpp/061.RotateList/RotateList.cpp)|Medium|
 |062|[Unique Paths](https://leetcode.com/problems/unique-paths/)| [C++](./cpp/062.UniquePaths/UniquePaths.cpp)|Medium|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
 |066|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./cpp/066.PlusOne/PlusOne.cpp)|Easy|
 |067|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./cpp/067.AddBinary/AddBinary.cpp)|Easy|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp), [Go](./go/069.Sqrt/Sqrt.go)|Easy|
-|070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp), [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp)|Easy|
+|070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp), [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp), [Go](./go/070.ClimbingStairs/ClimbingStairs.go)|Easy|
+|071|[Simplify Path](https://leetcode.com/problems/simplify-path/)| [C++](./cpp/071.SimplifyPath/SimplifyPath.cpp)|Medium|
 |072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
 |080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./cpp/080.RemoveDuplicatesFromSortedArrayII/RemoveDuplicatesFromSortedArrayII.cpp)|Medium|
 |081|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./cpp/081.SearchInRotatedSortedArrayII/SearchInRotatedSortedArrayII.cpp)|Medium|
