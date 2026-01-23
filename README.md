@@ -73,7 +73,10 @@ LeetCode
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp), [Go](./go/069.Sqrt/Sqrt.go)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp), [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp), [Go](./go/070.ClimbingStairs/ClimbingStairs.go)|Easy|
 |071|[Simplify Path](https://leetcode.com/problems/simplify-path/)| [C++](./cpp/071.SimplifyPath/SimplifyPath.cpp)|Medium|
-|072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Hard|
+|072|[Edit Distance](https://leetcode.com/problems/edit-distance/)| [C++](./cpp/072.EditDistance/EditDistance.cpp)|Medium|
+|073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)| [C++](./cpp/073.SetMatrixZeroes/SetMatrixZeroes.cpp)|Medium|
+|074|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [C++](./cpp/074.Search2DMatrix/Search2DMatrix.cpp)|Medium|
+|075|[Sort Colors](https://leetcode.com/problems/sort-colors/)| [C++](./cpp/075.SortColors/SortColors.cpp)|Medium|
 |080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./cpp/080.RemoveDuplicatesFromSortedArrayII/RemoveDuplicatesFromSortedArrayII.cpp)|Medium|
 |081|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./cpp/081.SearchInRotatedSortedArrayII/SearchInRotatedSortedArrayII.cpp)|Medium|
 |082|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [C++](./cpp/082.RemoveDuplicatesFromSortedListII/RemoveDuplicatesFromSortedListII.cpp)|Medium|
