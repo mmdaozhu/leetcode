@@ -77,6 +77,8 @@ LeetCode
 |073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)| [C++](./cpp/073.SetMatrixZeroes/SetMatrixZeroes.cpp)|Medium|
 |074|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [C++](./cpp/074.Search2DMatrix/Search2DMatrix.cpp)|Medium|
 |075|[Sort Colors](https://leetcode.com/problems/sort-colors/)| [C++](./cpp/075.SortColors/SortColors.cpp)|Medium|
+|077|[Combinations](https://leetcode.com/problems/combinations/)| [C++](./cpp/077.Combinations/Combinations.cpp)|Medium|
+|078|[Subsets](https://leetcode.com/problems/subsets/)| [C++](./cpp/078.Subsets/Subsets.cpp)|Medium|
 |080|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/)| [C++](./cpp/080.RemoveDuplicatesFromSortedArrayII/RemoveDuplicatesFromSortedArrayII.cpp)|Medium|
 |081|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./cpp/081.SearchInRotatedSortedArrayII/SearchInRotatedSortedArrayII.cpp)|Medium|
 |082|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [C++](./cpp/082.RemoveDuplicatesFromSortedListII/RemoveDuplicatesFromSortedListII.cpp)|Medium|
