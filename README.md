@@ -86,6 +86,8 @@ LeetCode
 |083|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [C++](./cpp/083.RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.cpp)|Easy|
 |086|[Partition List](https://leetcode.com/problems/partition-list/)| [C++](./cpp/086.PartitionList/PartitionList.cpp)|Medium|
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [C++](./cpp/088.MergeSortedArray/MergeSortedArray.cpp)|Easy|
+|089|[Gray Code](https://leetcode.com/problems/gray-code/)| [C++](./cpp/089.GrayCode/GrayCode.cpp)|Medium|
+|090|[Subsets II](https://leetcode.com/problems/subsets-ii/)| [C++](./cpp/090.SubsetsII/SubsetsII.cpp)|Medium|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| [C++](./cpp/094.BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.cpp)|Easy|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree.cpp), [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)| [C++](./cpp/100.SameTree/SameTree.cpp)|Easy|
