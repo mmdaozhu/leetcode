@@ -88,6 +88,9 @@ LeetCode
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [C++](./cpp/088.MergeSortedArray/MergeSortedArray.cpp)|Easy|
 |089|[Gray Code](https://leetcode.com/problems/gray-code/)| [C++](./cpp/089.GrayCode/GrayCode.cpp)|Medium|
 |090|[Subsets II](https://leetcode.com/problems/subsets-ii/)| [C++](./cpp/090.SubsetsII/SubsetsII.cpp)|Medium|
+|091|[Decode Ways](https://leetcode.com/problems/decode-ways/)| [C++](./cpp/091.DecodeWays/DecodeWays.cpp)|Medium|
+|092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)| [C++](./cpp/092.ReverseLinkedListII/ReverseLinkedListII.cpp)|Medium|
+|093|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)| [C++](./cpp/093.RestoreIPAddresses/RestoreIPAddresses.cpp)|Medium|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| [C++](./cpp/094.BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.cpp)|Easy|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree.cpp), [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)| [C++](./cpp/100.SameTree/SameTree.cpp)|Easy|
