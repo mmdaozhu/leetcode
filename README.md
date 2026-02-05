@@ -92,6 +92,8 @@ LeetCode
 |092|[Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)| [C++](./cpp/092.ReverseLinkedListII/ReverseLinkedListII.cpp)|Medium|
 |093|[Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)| [C++](./cpp/093.RestoreIPAddresses/RestoreIPAddresses.cpp)|Medium|
 |094|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)| [C++](./cpp/094.BinaryTreeInorderTraversal/BinaryTreeInorderTraversal.cpp)|Easy|
+|095|[Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)| [C++](./cpp/095.UniqueBinarySearchTreesII/UniqueBinarySearchTreesII.cpp)|Medium|
+|096|[Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)| [C++](./cpp/096.UniqueBinarySearchTrees/UniqueBinarySearchTrees.cpp)|Medium|
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree.cpp), [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp)|Medium|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)| [C++](./cpp/100.SameTree/SameTree.cpp)|Easy|
 |102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
