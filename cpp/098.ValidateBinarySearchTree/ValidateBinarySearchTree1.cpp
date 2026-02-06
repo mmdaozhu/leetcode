@@ -1,9 +1,5 @@
-/*
-解题思路：
-    递归
-
-时间复杂度分析：O(n)
-*/
+// O(n)
+// Runtime Beats 100.00%
 
 #include <cassert>
 #include <iostream>
