@@ -69,8 +69,10 @@ LeetCode
 |062|[Unique Paths](https://leetcode.com/problems/unique-paths/)| [C++](./cpp/062.UniquePaths/UniquePaths.cpp)|Medium|
 |063|[Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)| [C++](./cpp/063.UniquePathsII/UniquePathsII.cpp)|Medium|
 |064|[Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)| [C++](./cpp/064.MinimumPathSum/MinimumPathSum.cpp)|Medium|
+|065|[Valid Number](https://leetcode.com/problems/valid-number/)| [C++](./cpp/065.ValidNumber/ValidNumber.cpp)|Hard|
 |066|[Plus One](https://leetcode.com/problems/plus-one/)| [C++](./cpp/066.PlusOne/PlusOne.cpp)|Easy|
 |067|[Add Binary](https://leetcode.com/problems/add-binary/)| [C++](./cpp/067.AddBinary/AddBinary.cpp)|Easy|
+|068|[Text Justification](https://leetcode.com/problems/text-justification/)| [C++](./cpp/068.TextJustification/TextJustification.cpp)|Hard|
 |069|[Sqrt(x)](https://leetcode.com/problems/sqrtx/)| [C++](./cpp/069.Sqrt/Sqrt.cpp), [Go](./go/069.Sqrt/Sqrt.go)|Easy|
 |070|[Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)| [C++](./cpp/070.ClimbingStairs/ClimbingStairs.cpp), [C++](./cpp/070.ClimbingStairs/ClimbingStairs1.cpp), [Go](./go/070.ClimbingStairs/ClimbingStairs.go)|Easy|
 |071|[Simplify Path](https://leetcode.com/problems/simplify-path/)| [C++](./cpp/071.SimplifyPath/SimplifyPath.cpp)|Medium|
