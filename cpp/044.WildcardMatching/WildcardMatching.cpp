@@ -4,10 +4,10 @@
     dp(i,j) 表示 s[0..i-1] 和 p[0..j-1] 是否匹配
     dp(i,j) =
 
-    1）如果 p[j-1] 是普通字符或 '.'
-       （'.' 可以匹配任意一个字符）
+    1）如果 p[j-1] 是普通字符或 '?'
+       （'?' 可以匹配任意一个字符）
 
-       若 s[i-1] == p[j-1] 或 p[j-1] == '.'
+       若 s[i-1] == p[j-1] 或 p[j-1] == '?'
        则：
             dp(i, j) = dp(i-1, j-1)
 
@@ -21,13 +21,10 @@
        分两种情况：
 
        （1）'*' 表示 0 次
-           直接忽略 p[j-2] 和 '*'
-           dp(i, j) = dp(i, j-2)
+           dp[i][j - 1]
 
        （2）'*' 表示 >= 1 次
-           若 s[i-1] == p[j-2] 或 p[j-2] == '.'
-           则 '*' 可以继续匹配一个字符：
-           dp(i, j) = dp(i, j) || dp(i-1, j)
+           dp[i - 1][j]
 */
 
 // O(m*n)
@@ -46,8 +43,8 @@ public:
         std::vector<std::vector<bool>> dp(m + 1, std::vector<bool>(n + 1, false));
 
         dp[0][0] = true;
-        for (int j = 2; j <= n; j++) {
-            if (p[j - 1] == '*' && dp[0][j - 2]) {
+        for (int j = 1; j <= n; j++) {
+            if (p[j - 1] == '*' && dp[0][j - 1]) {
                 dp[0][j] = true;
             }
         }
@@ -55,15 +52,9 @@ public:
         for (int i = 1; i <= m; i++) {
             for (int j = 1; j <= n; j++) {
                 if (p[j - 1] != '*') {
-                    dp[i][j] = dp[i - 1][j - 1] && (s[i - 1] == p[j - 1] || p[j - 1] == '.');
+                    dp[i][j] = dp[i - 1][j - 1] && (s[i - 1] == p[j - 1] || p[j - 1] == '?');
                 } else {
-                    // '*': 0次
-                    dp[i][j] = dp[i][j - 2];
-
-                    // '*': >=1次
-                    if (s[i - 1] == p[j - 2] || p[j - 2] == '.') {
-                        dp[i][j] = dp[i][j] || dp[i - 1][j];
-                    }
+                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
                 }
             }
         }
@@ -81,16 +72,16 @@ void test1() {
 
 void test2() {
     std::string s = "aa";
-    std::string p = "a*";
+    std::string p = "*";
     Solution solution;
     assert(solution.isMatch(s, p));
 }
 
 void test3() {
-    std::string s = "ab";
-    std::string p = ".*";
+    std::string s = "cb";
+    std::string p = "?a";
     Solution solution;
-    assert(solution.isMatch(s, p));
+    assert(!solution.isMatch(s, p));
 }
 
 int main() {

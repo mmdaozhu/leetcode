@@ -46,8 +46,9 @@ LeetCode
 |039|[Combination Sum](https://leetcode.com/problems/combination-sum/)| [C++](./cpp/039.CombinationSum/CombinationSum.cpp)|Medium|
 |040|[Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)| [C++](./cpp/040.CombinationSumII/CombinationSumII.cpp)|Medium|
 |041|[First Missing Positive](https://leetcode.com/problems/first-missing-positive/)| [C++](./cpp/041.FirstMissingPositive/FirstMissingPositive.cpp)|Hard|
-|042|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [C++](./cpp/042.TrappingRainWater/TrappingRainWater.cpp)|Hard|
+|042|[Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)| [C++](./cpp/042.TrappingRainWater/TrappingRainWater.cpp)， [C++](./cpp/042.TrappingRainWater/TrappingRainWater1.cpp)|Hard|
 |043|[Multiply Strings](https://leetcode.com/problems/multiply-strings/)| [C++](./cpp/043.MultiplyStrings/MultiplyStrings.cpp)|Medium|
+|044|[Wildcard Matching](https://leetcode.com/problems/wildcard-matching/)| [C++](./cpp/044.WildcardMatching/WildcardMatching.cpp)|Hard|
 |045|[Jump Game II](https://leetcode.com/problems/jump-game-ii/)| [C++](./cpp/045.JumpGameII/JumpGameII.cpp)|Medium|
 |046|[Permutations](https://leetcode.com/problems/permutations/)| [C++](./cpp/046.Permutations/Permutations.cpp), [C++](./cpp/046.Permutations/Permutations1.cpp)|Medium|
 |047|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [C++](./cpp/047.PermutationsII/PermutationsII.cpp), [C++](./cpp/047.PermutationsII/PermutationsII1.cpp)|Medium|
