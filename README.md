@@ -89,7 +89,9 @@ LeetCode
 |082|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [C++](./cpp/082.RemoveDuplicatesFromSortedListII/RemoveDuplicatesFromSortedListII.cpp)|Medium|
 |083|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [C++](./cpp/083.RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.cpp)|Easy|
 |084|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)| [C++](./cpp/084.LargestRectangleInHistogram/LargestRectangleInHistogram.cpp)|Hard|
+|085|[Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/)| [C++](./cpp/085.MaximalRectangle/MaximalRectangle.cpp)|Hard|
 |086|[Partition List](https://leetcode.com/problems/partition-list/)| [C++](./cpp/086.PartitionList/PartitionList.cpp)|Medium|
+|087|[Scramble String](https://leetcode.com/problems/scramble-string/)| [C++](./cpp/087.ScrambleString/ScrambleString.cpp)|Hard|
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [C++](./cpp/088.MergeSortedArray/MergeSortedArray.cpp)|Easy|
 |089|[Gray Code](https://leetcode.com/problems/gray-code/)| [C++](./cpp/089.GrayCode/GrayCode.cpp)|Medium|
 |090|[Subsets II](https://leetcode.com/problems/subsets-ii/)| [C++](./cpp/090.SubsetsII/SubsetsII.cpp)|Medium|
