@@ -80,6 +80,7 @@ LeetCode
 |073|[Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)| [C++](./cpp/073.SetMatrixZeroes/SetMatrixZeroes.cpp)|Medium|
 |074|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)| [C++](./cpp/074.Search2DMatrix/Search2DMatrix.cpp)|Medium|
 |075|[Sort Colors](https://leetcode.com/problems/sort-colors/)| [C++](./cpp/075.SortColors/SortColors.cpp)|Medium|
+|076|[Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)| [C++](./cpp/076.MinimumWindowSubstring/MinimumWindowSubstring.cpp)|Hard|
 |077|[Combinations](https://leetcode.com/problems/combinations/)| [C++](./cpp/077.Combinations/Combinations.cpp)|Medium|
 |078|[Subsets](https://leetcode.com/problems/subsets/)| [C++](./cpp/078.Subsets/Subsets.cpp)|Medium|
 |079|[Word Search](https://leetcode.com/problems/word-search/)| [C++](./cpp/079.WordSearch/WordSearch.cpp)|Medium|
@@ -87,6 +88,7 @@ LeetCode
 |081|[Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/)| [C++](./cpp/081.SearchInRotatedSortedArrayII/SearchInRotatedSortedArrayII.cpp)|Medium|
 |082|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/)| [C++](./cpp/082.RemoveDuplicatesFromSortedListII/RemoveDuplicatesFromSortedListII.cpp)|Medium|
 |083|[Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)| [C++](./cpp/083.RemoveDuplicatesFromSortedList/RemoveDuplicatesFromSortedList.cpp)|Easy|
+|084|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)| [C++](./cpp/084.LargestRectangleInHistogram/LargestRectangleInHistogram.cpp)|Hard|
 |086|[Partition List](https://leetcode.com/problems/partition-list/)| [C++](./cpp/086.PartitionList/PartitionList.cpp)|Medium|
 |088|[Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)| [C++](./cpp/088.MergeSortedArray/MergeSortedArray.cpp)|Easy|
 |089|[Gray Code](https://leetcode.com/problems/gray-code/)| [C++](./cpp/089.GrayCode/GrayCode.cpp)|Medium|
