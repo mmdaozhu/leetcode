@@ -1,4 +1,4 @@
-// O(n)
+// O(max(m,n))
 // Runtime Beats 100.00%
 
 #include <cassert>
@@ -16,15 +16,15 @@ struct ListNode {
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* result = nullptr;
-        ListNode** p = &result;
+        ListNode dummy(0);
+        ListNode* p = &dummy;
+
         int carry = 0;
         while (l1 && l2) {
             auto sum = l1->val + l2->val + carry;
-            ListNode* node = new ListNode(sum % 10);
+            p->next = new ListNode(sum % 10);
             carry = sum / 10;
-            (*p) = node;
-            p = (&node->next);
+            p = p->next;
             l1 = l1->next;
             l2 = l2->next;
         }
@@ -32,18 +32,17 @@ public:
         ListNode* last = l1 ? l1 : l2;
         while (last) {
             auto sum = last->val + carry;
-            ListNode* node = new ListNode(sum % 10);
+            p->next = new ListNode(sum % 10);
             carry = sum / 10;
-            (*p) = node;
-            p = (&node->next);
+            p = p->next;
             last = last->next;
         }
 
         if (carry) {
-            (*p) = new ListNode(carry);
+            p->next = new ListNode(carry);
         }
 
-        return result;
+        return dummy.next;
     }
 };
 

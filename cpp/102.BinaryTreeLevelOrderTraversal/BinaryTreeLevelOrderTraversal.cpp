@@ -1,13 +1,14 @@
 /*
 解题思路：
-    深度优先遍历
+    按层遍历
 */
 
 // O(n)
-// Runtime Beats 32.33%
+// Runtime Beats 100.00%
 
 #include <cassert>
 #include <iostream>
+#include <queue>
 #include <vector>
 
 /**
@@ -26,30 +27,34 @@ struct TreeNode {
 class Solution {
 public:
     std::vector<std::vector<int>> levelOrder(TreeNode* root) {
+        std::vector<std::vector<int>> result;
         if (root == nullptr) {
             return result;
         }
-        auto level = 0;
-        preOrder(root, level);
+        std::queue<TreeNode*> q;
+        q.push(root);
+
+        while (!q.empty()) {
+            std::vector<int> level;
+
+            int size = q.size();
+            for (int i = 0; i < size; i++) {
+                auto node = q.front();
+                q.pop();
+                level.push_back(node->val);
+
+                if (node->left) {
+                    q.push(node->left);
+                }
+
+                if (node->right) {
+                    q.push(node->right);
+                }
+            }
+            result.push_back(level);
+        }
         return result;
     }
-
-    void preOrder(TreeNode* root, int level) {
-        if (result.size() < level + 1) {
-            result.push_back({});
-        }
-        result[level].push_back(root->val);
-
-        if (root->left) {
-            preOrder(root->left, level + 1);
-        }
-        if (root->right) {
-            preOrder(root->right, level + 1);
-        }
-    }
-
-private:
-    std::vector<std::vector<int>> result;
 };
 
 void test1() {

@@ -9,7 +9,7 @@ LeetCode
 |002|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)| [C++](./cpp/002.AddTwoNumbers/AddTwoNumbers.cpp)|Medium|
 |003|[Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)| [C++](./cpp/003.LongestSubstringWithoutRepeatingCharacters/LongestSubstringWithoutRepeatingCharacters.cpp)|Medium|
 |004|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)| [C++](./cpp/004.MedianOfTwoSortedArrays/MedianOfTwoSortedArrays.cpp)|Hard|
-|005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [C++](./cpp/005.LongestPalindromicSubstring/LongestPalindromicSubstring.cpp)|Medium|
+|005|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)| [C++](./cpp/005.LongestPalindromicSubstring/LongestPalindromicSubstring.cpp), [C++](./cpp/005.LongestPalindromicSubstring/LongestPalindromicSubstring1.cpp)|Medium|
 |006|[ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)| [C++](./cpp/006.ZigZagConversion/ZigZagConversion.cpp)|Medium|
 |007|[Reverse Integer](https://leetcode.com/problems/reverse-integer/)| [C++](./cpp/007.ReverseInteger/ReverseInteger.cpp)|Medium|
 |008|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)| [C++](./cpp/008.StringToInteger(atoi)/StringToInteger(atoi).cpp), [Python](./python3/008.StringToInteger(atoi)/StringToInteger(atoi).py)|Medium|
@@ -36,7 +36,7 @@ LeetCode
 |029|[Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)| [C++](./cpp/029.DivideTwoInt/DivideTwoInt.cpp)|Medium|
 |030|[Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)| [C++](./cpp/030.SubstringWithConcatenationOfAllWords/SubstringWithConcatenationOfAllWords.cpp)|Hard|
 |031|[Next Permutation](https://leetcode.com/problems/next-permutation/)| [C++](./cpp/031.NextPermutation/NextPermutation.cpp)|Medium|
-|032|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [C++](./cpp/032.LongestValidParentheses/LongestValidParentheses.cpp)|Hard|
+|032|[Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)| [C++](./cpp/032.LongestValidParentheses/LongestValidParentheses.cpp), [C++](./cpp/032.LongestValidParentheses/LongestValidParentheses1.cpp)|Hard|
 |033|[Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)| [C++](./cpp/033.SearchInRotatedSortedArray/SearchInRotatedSortedArray.cpp)|Medium|
 |034|[Search for a Range](https://leetcode.com/problems/search-for-a-range/)| [C++](./cpp/034.SearchForRange/SearchForRange.cpp)|Medium|
 |035|[Search Insert Position](https://leetcode.com/problems/search-insert-position/)| [C++](./cpp/035.SearchInsertPosition/SearchInsertPosition.cpp)|Medium|
@@ -53,7 +53,7 @@ LeetCode
 |046|[Permutations](https://leetcode.com/problems/permutations/)| [C++](./cpp/046.Permutations/Permutations.cpp), [C++](./cpp/046.Permutations/Permutations1.cpp)|Medium|
 |047|[Permutations II](https://leetcode.com/problems/permutations-ii/)| [C++](./cpp/047.PermutationsII/PermutationsII.cpp), [C++](./cpp/047.PermutationsII/PermutationsII1.cpp)|Medium|
 |048|[Rotate Image](https://leetcode.com/problems/rotate-image/)| [C++](./cpp/048.RotateImage/RotateImage.cpp)|Medium|
-|049|[Group Anagrams](https://leetcode.com/problems/anagrams/)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
+|049|[Group Anagrams](https://leetcode.com/problems/group-anagrams)| [C++](./cpp/049.GroupAnagrams/GroupAnagrams.cpp)|Medium|
 |050|[Pow(x, n)](https://leetcode.com/problems/powx-n/)| [C++](./cpp/050.PowXN/PowXN.cpp), [C++](./cpp/050.PowXN/PowXN1.cpp), [Python](./python3/050.PowXN/PowXN.py), [Go](./go/050.PowXN/PowXN.go), [Go](./go/050.PowXN/PowXN1.go)|Medium|
 |051|[N-Queens](https://leetcode.com/problems/n-queens/)| [C++](./cpp/051.N-Queens/N-Queens.cpp), [C++](./cpp/051.N-Queens/N-Queens1.cpp)|Hard|
 |052|[N-Queens II](https://leetcode.com/problems/n-queens-ii/)| [C++](./cpp/052.N-QueensII/N-QueensII.cpp)|Hard|
@@ -105,7 +105,8 @@ LeetCode
 |098|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)| [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree.cpp), [C++](./cpp/098.ValidateBinarySearchTree/ValidateBinarySearchTree1.cpp), [Python](./python3/098.ValidateBinarySearchTree/ValidateBinarySearchTree.py), [Go](./go/098.ValidateBinarySearchTree/ValidateBinarySearchTree.go)|Medium|
 |099|[Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/)| [C++](./cpp/099.RecoverBinarySearchTree/RecoverBinarySearchTree.cpp)|Medium|
 |100|[Same Tree](https://leetcode.com/problems/same-tree/)| [C++](./cpp/100.SameTree/SameTree.cpp)|Easy|
-|102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
+|101|[Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)| [C++](./cpp/101.SymmetricTree/SymmetricTree.cpp)|Easy|
+|102|[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)| [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal.cpp), [C++](./cpp/102.BinaryTreeLevelOrderTraversal/BinaryTreeLevelOrderTraversal1.cpp)|Medium|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| [C++](./cpp/104.MaximumDepthOfBinaryTree/MaximumDepthOfBinaryTree1.cpp)|Easy|
 |111|[Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)| [C++](./cpp/111.MinimumDepthOfBinaryTree/MinimumDepthOfBinaryTree1.cpp)|Easy|
 |112|[Path Sum](https://leetcode.com/problems/path-sum/)| [C++](./cpp/112.PathSum/PathSum.cpp)|Easy|
@@ -114,6 +115,7 @@ LeetCode
 |122|[Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)| [C++](./cpp/122.BestTimeToBuyAndSellStockII/BestTimeToBuyAndSellStockII.cpp)|Easy|
 |123|[Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)| [C++](./cpp/123.BestTimeToBuyAndSellStockIII/BestTimeToBuyAndSellStockIII.cpp)|Hard|
 |127|[Word Ladder](https://leetcode.com/problems/word-ladder/)| [C++](./cpp/127.WordLadder/WordLadder.cpp)|Medium|
+|128|[Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)| [C++](./cpp/128.LongestConsecutiveSequence/LongestConsecutiveSequence.cpp)|Medium|
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)| [C++](./cpp/141.LinkedListCycle/LinkedListCycle1.cpp)|Easy|
 |146|[LRU Cache](https://leetcode.com/problems/lru-cache/)| [C++](./cpp/146.LRUCache/LRUCache.cpp)|Medium|
 |150|[Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)| [C++](./cpp/150.EvaluateReversePolishNotation/EvaluateReversePolishNotation.cpp)|Medium|

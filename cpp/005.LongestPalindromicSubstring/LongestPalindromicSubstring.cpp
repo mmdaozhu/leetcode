@@ -3,7 +3,7 @@
     从中心向两端扩散的双指针技巧
 */
 
-// O(n)
+// O(n*n)
 // Runtime Beats 34.55%
 
 #include <cassert>
@@ -34,8 +34,6 @@ public:
 
     std::string FindPalindrome(std::string s, int left, int right) {
         int n = s.size();
-        int l = left;
-        int r = right;
         while (left >= 0 && right <= n - 1 && s[left] == s[right]) {
             left--;
             right++;

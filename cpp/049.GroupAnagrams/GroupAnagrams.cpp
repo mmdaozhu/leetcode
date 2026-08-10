@@ -1,7 +1,6 @@
-// O(N*KlogK)
-// Runtime Beats 77.69%
+// O(N*K)
+// Runtime Beats 5.11%
 
-#include <algorithm>
 #include <cassert>
 #include <iostream>
 #include <string>
@@ -14,8 +13,15 @@ public:
         std::unordered_map<std::string, std::vector<std::string>> map;
         std::vector<std::vector<std::string>> results;
         for (const auto& str : strs) {
-            auto t = str;
-            std::sort(t.begin(), t.end());
+            std::vector<int> count(26, 0);
+            for (const auto& c : str) {
+                count[c - 'a']++;
+            }
+            
+            std::string t;
+            for (const auto& v : count) {
+                t = t + "#" + std::to_string(v);
+            }
 
             auto it = map.find(t);
             if (it != map.end()) {
