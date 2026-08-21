@@ -1,9 +1,12 @@
 /*
 解题思路：
     回溯
+    N = candidates.size()
+    M = min(candidates)
+    T = target
 */
 
-// O(2^n)
+// O(N^(T/M))
 // Runtime Beats 45.54%
 
 #include <algorithm>

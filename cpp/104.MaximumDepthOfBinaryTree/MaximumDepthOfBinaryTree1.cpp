@@ -1,47 +1,67 @@
 /*
-解题思路：递归
-
-时间复杂度分析：O(n)
+解题思路：
+    深度优先遍历
 */
 
-#include <algorithm>
+// O(n)
+// Runtime Beats 100.00%
+
 #include <cassert>
 #include <iostream>
 
-/**
- * Definition for a binary tree node.
- *
- */
+// Definition for a binary tree node.
 struct TreeNode {
     int val;
-    TreeNode *left;
-    TreeNode *right;
+    TreeNode* left;
+    TreeNode* right;
     TreeNode() : val(0), left(nullptr), right(nullptr) {}
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+    TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
 };
 
 class Solution {
 public:
-    int maxDepth(TreeNode *root) {
-        if (root == nullptr) {
-            return 0;
-        }
-        return std::max(maxDepth(root->left), maxDepth(root->right)) + 1;
+    int maxDepth(TreeNode* root) {
+        max_depth = 0;
+        maxDepth(root, 0);
+        return max_depth;
     }
+
+    void maxDepth(TreeNode* root, int level) {
+        if (root == nullptr) {
+            return;
+        }
+        level++;
+        if (max_depth < level) {
+            max_depth = level;
+        }
+        maxDepth(root->left, level);
+        maxDepth(root->right, level);
+    }
+
+private:
+    int max_depth{};
 };
 
 void test1() {
-    TreeNode rootRightLeft(15);
-    TreeNode rootRightRight(7);
-    TreeNode rootLeft(9);
-    TreeNode rootRight(20, &rootRightLeft, &rootRightRight);
-    TreeNode root(3, &rootLeft, &rootRight);
+    TreeNode* root = new TreeNode(3);
+    root->left = new TreeNode(9);
+    root->right = new TreeNode(20);
+    root->right->left = new TreeNode(15);
+    root->right->right = new TreeNode(7);
     Solution s;
-    assert(s.maxDepth(&root) == 3);
+    assert(s.maxDepth(root) == 3);
+}
+
+void test2() {
+    TreeNode* root = new TreeNode(1);
+    root->right = new TreeNode(2);
+    Solution s;
+    assert(s.maxDepth(root) == 2);
 }
 
 int main() {
     test1();
+    test2();
     return 0;
 }

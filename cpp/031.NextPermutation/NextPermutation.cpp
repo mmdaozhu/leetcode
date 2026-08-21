@@ -16,28 +16,26 @@
 class Solution {
 public:
     void nextPermutation(std::vector<int>& nums) {
-        int m = -1;
+        int pos = -1;
         for (int i = nums.size() - 2; i >= 0; i--) {
             if (nums[i] < nums[i + 1]) {
-                m = i;
+                pos = i;
                 break;
             }
         }
-        if (m == -1) {
+        if (pos == -1) {
             std::reverse(nums.begin(), nums.end());
             return;
         }
 
-        int n = -1;
-        for (int i = nums.size() - 1; i >= 0; i--) {
-            if (nums[i] > nums[m]) {
-                n = i;
+        for (int i = nums.size() - 1; i > pos; i--) {
+            if (nums[i] > nums[pos]) {
+                std::swap(nums[pos], nums[i]);
                 break;
             }
         }
 
-        std::swap(nums[m], nums[n]);
-        std::reverse(nums.begin() + m + 1, nums.end());
+        std::reverse(nums.begin() + pos + 1, nums.end());
     }
 };
 

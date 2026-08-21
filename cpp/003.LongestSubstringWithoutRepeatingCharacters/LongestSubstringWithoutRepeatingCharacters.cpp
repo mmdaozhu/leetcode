@@ -8,13 +8,13 @@
 
 #include <cassert>
 #include <iostream>
-#include <map>
 #include <string>
+#include <unordered_map>
 
 class Solution {
 public:
     int lengthOfLongestSubstring(std::string s) {
-        std::map<char, int> map;
+        std::unordered_map<char, int> map;
         int max_length = 0;
         int last_repeat_pos = -1;
 

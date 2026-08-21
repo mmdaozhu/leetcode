@@ -1,3 +1,4 @@
+// Runtime Beats 58.70%
 
 #include <cassert>
 #include <iostream>

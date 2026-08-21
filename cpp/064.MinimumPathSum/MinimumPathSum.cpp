@@ -16,6 +16,10 @@
 class Solution {
 public:
     int minPathSum(std::vector<std::vector<int>>& grid) {
+        if (grid.empty()) {
+            return 0;
+        }
+
         int m = grid.size();
         int n = grid[0].size();
         std::vector<std::vector<int>> states(m, std::vector<int>(n, 0));

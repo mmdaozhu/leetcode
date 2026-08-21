@@ -1,14 +1,14 @@
 /*
 解题思路：
-    递归
+    广度优先遍历
 */
 
 // O(n)
 // Runtime Beats 100.00%
 
-#include <algorithm>
 #include <cassert>
 #include <iostream>
+#include <queue>
 
 // Definition for a binary tree node.
 struct TreeNode {
@@ -23,10 +23,28 @@ struct TreeNode {
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-        if (root == nullptr) {
+        if (!root) {
             return 0;
         }
-        return std::max(maxDepth(root->left), maxDepth(root->right)) + 1;
+
+        std::queue<TreeNode*> queue;
+        queue.push(root);
+        int depth = 0;
+        while (!queue.empty()) {
+            depth++;
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                auto front = queue.front();
+                if (front->left != nullptr) {
+                    queue.push(front->left);
+                }
+                if (front->right != nullptr) {
+                    queue.push(front->right);
+                }
+                queue.pop();
+            }
+        }
+        return depth;
     }
 };
 

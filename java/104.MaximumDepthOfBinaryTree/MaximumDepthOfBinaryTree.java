@@ -1,20 +1,18 @@
 /*
 解题思路：
     递归
-
-时间复杂度分析：O(n)
 */
 
-/**
- * Definition for a binary tree node.
- */
-class TreeNode {
+// O(n)
+// Runtime Beats 100.00%
+
+// Definition for a binary tree node.
+class TreeNode{
     int val;
     TreeNode left;
     TreeNode right;
 
-    TreeNode() {
-    }
+    TreeNode() {}
 
     TreeNode(int val) {
         this.val = val;
@@ -27,7 +25,7 @@ class TreeNode {
     }
 }
 
-public class Solution {
+class Solution {
     public int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
@@ -37,16 +35,25 @@ public class Solution {
 
     public static void main(String[] args) {
         test1();
+        test2();
     }
 
     private static void test1() {
-        TreeNode rootRightLeft = new TreeNode(15);
-        TreeNode rootRightRight = new TreeNode(7);
-        TreeNode rootLeft = new TreeNode(9);
-        TreeNode rootRight = new TreeNode(20, rootRightLeft, rootRightRight);
-        TreeNode root = new TreeNode(3, rootLeft, rootRight);
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
 
         Solution s = new Solution();
         assert s.maxDepth(root) == 3;
+    }
+
+    private static void test2() {
+        TreeNode root = new TreeNode(1);
+        root.right = new TreeNode(2);
+
+        Solution s = new Solution();
+        assert s.maxDepth(root) == 2;
     }
 }

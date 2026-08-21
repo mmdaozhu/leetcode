@@ -3,14 +3,14 @@
 
 #include <cassert>
 #include <iostream>
-#include <map>
 #include <stack>
 #include <string>
+#include <unordered_map>
 
 class Solution {
 public:
     bool isValid(std::string s) {
-        std::map<char, char> map{{'(', ')'}, {'{', '}'}, {'[', ']'}};
+        std::unordered_map<char, char> map{{'(', ')'}, {'{', '}'}, {'[', ']'}};
 
         std::stack<char> stack;
         for (const auto& c : s) {

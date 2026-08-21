@@ -3,8 +3,8 @@
     滑动窗口
 */
 
-// O(n)
-// Runtime Beats 29.51%
+// O(n+m)
+// Runtime Beats 37.62%
 
 #include <cassert>
 #include <climits>
@@ -27,9 +27,10 @@ public:
             auto c = s[right];
             right++;
 
-            if (need.count(c)) {
+            auto it = need.find(c);
+            if (it != need.end()) {
                 windows[c]++;
-                if (windows[c] == need[c]) {
+                if (windows[c] == it->second) {
                     valid++;
                 }
             }
@@ -43,8 +44,9 @@ public:
                 auto d = s[left];
                 left++;
 
-                if (need.count(d)) {
-                    if (windows[d] == need[d]) {
+                auto it = need.find(d);
+                if (it != need.end()) {
+                    if (windows[d] == it->second) {
                         valid--;
                     }
                     windows[d]--;
