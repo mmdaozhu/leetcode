@@ -28,7 +28,7 @@ struct Compare {
 class Solution {
 public:
     ListNode* mergeKLists(std::vector<ListNode*>& lists) {
-        ListNode dummy(0);
+        ListNode dummy;
         ListNode* p = &dummy;
 
         std::priority_queue<ListNode*, std::vector<ListNode*>, Compare> pq;

@@ -138,14 +138,18 @@ LeetCode
 |232|[Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)| [C++](./cpp/232.ImplementQueueUsingStacks/ImplementQueueUsingStacks.cpp)|Easy|
 |235|[Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)| [C++](./cpp/235.LowestCommonAncestorOfABinarySearchTree/LowestCommonAncestorOfABinarySearchTree.cpp)|Easy|
 |236|[Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)| [C++](./cpp/236.LowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfABinaryTree.cpp)|Medium|
-|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./cpp/239.SlidingWindowMaximum/SlidingWindowMaximum.cpp)|Hard|
+|239|[Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)| [C++](./cpp/239.SlidingWindowMaximum/SlidingWindowMaximum.cpp), [Python](./python3/239.SlidingWindowMaximum/SlidingWindowMaximum.py)|Hard|
+|240|[Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/)|[C++](./cpp/240.Search2DMatrixII/Search2DMatrixII.cpp)|Medium|
 |242|[Valid Anagram](https://leetcode.com/problems/valid-anagram/)| [C++](./cpp/242.ValidAnagram/ValidAnagram1.cpp)|Easy|
 |300|[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)| [C++](./cpp/300.LongestIncreasingSubsequence/LongestIncreasingSubsequence1.cpp)|Medium|
 |309|[Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)| [C++](./cpp/309.BestTimeToBuyAndSellStockWithCooldown/BestTimeToBuyAndSellStockWithCooldown.cpp)|Medium|
 |322|[Coin Change](https://leetcode.com/problems/coin-change/)| [C++](./cpp/322.CoinChange/CoinChange.cpp)|Medium|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits/)| [C++](./cpp/338.CountingBits/CountingBits1.cpp)|Medium|
 |344|[Reverse String](https://leetcode.com/problems/reverse-string/)| [C++](./cpp/344.ReverseString/ReverseString.cpp)|Easy|
+|438|[Find all Anagrams in a string](https://leetcode.com/problems/find-all-anagrams-in-a-string/)| [C++](./cpp/438.FindAllAnagramsInAString/FindAllAnagramsInAString.cpp)|Medium|
 |547|[Number of Provinces](https://leetcode.com/problems/number-of-provinces/)| [C++](./cpp/547.NumberOfProvinces/NumberOfProvinces.cpp)|Medium|
+|560|[Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)| [C++](./cpp/560.SubarraySumEqualsK/SubarraySumEqualsK.cpp)|Medium|
 |641|[Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)| [C++](./cpp/641.DesignCircularDeque/DesignCircularDeque.cpp)|Medium|
 |703|[Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)| [C++](./cpp/703.KthLargestElementInAStream/KthLargestElementInAStream.cpp)|Easy|
 |714|[Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)| [C++](./cpp/714.BestTimeToBuyAndSellStockWithTransactionFee/BestTimeToBuyAndSellStockWithTransactionFee.cpp)|Medium|
+|763|[Partition Labels](https://leetcode.com/problems/partition-labels/)| [C++](./cpp/763.PartitionLabels/PartitionLabels.cpp)|Medium|

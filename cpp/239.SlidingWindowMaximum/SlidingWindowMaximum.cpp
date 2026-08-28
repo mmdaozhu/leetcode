@@ -1,13 +1,13 @@
 /*
 解题思路：
-    维护一个长度为k的窗口，里面保存的是数组的坐标。
-    最大值永远是窗口最左边的值。
-    最关键的步骤是：
-        如果进窗口元素的值大于窗口最右边的值，则把窗口最右边的值弹出。
-        循环做上述操作直到不满足条件。
-
-时间复杂度分析：O(n)
+    单调队列
+    维护一个“有资格成为最大值”的队列, 里面保存的是数组的坐标。
+    队首是窗口的最大值
+    最关键的步骤是： 删除队尾所有比当前元素小的
 */
+
+// O(n)
+// Runtime Beats 45.36%
 
 #include <cassert>
 #include <deque>
@@ -19,20 +19,22 @@ public:
     std::vector<int> maxSlidingWindow(std::vector<int>& nums, int k) {
         std::vector<int> result;
         std::deque<int> window;
-        for (int i = 0; i < nums.size(); i++) {
-            if (i >= k && i - window.front() >= k) {
+
+        for (int right = 0; right < nums.size(); right++) {
+            while (!window.empty() && nums[window.back()] <= nums[right]) {
+                window.pop_back();
+            }
+
+            window.push_back(right);
+
+            if (window.front() <= right - k) {
                 window.pop_front();
             }
 
-            while (!window.empty() && nums[window.back()] <= nums[i]) {
-                window.pop_back();
-            }
-            window.emplace_back(i);
-            if (i >= k - 1) {
-                result.emplace_back(nums[window.front()]);
+            if (right >= k - 1) {
+                result.push_back(nums[window.front()]);
             }
         }
-
         return result;
     }
 };
@@ -45,7 +47,16 @@ void test1() {
     assert(s.maxSlidingWindow(nums, k) == results);
 }
 
+void test2() {
+    auto k = 1;
+    std::vector<int> nums{1};
+    std::vector<int> results{1};
+    Solution s;
+    assert(s.maxSlidingWindow(nums, k) == results);
+}
+
 int main() {
     test1();
+    test2();
     return 0;
 }

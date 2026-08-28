@@ -1,8 +1,11 @@
 /*
 解题思路：
-    比较每天能卖出的股票的最大值（当天减去过去最小值）
-
+    贪心
+    遍历价格，维护到当前为止的最低买入价
 */
+
+// O(n)
+// Runtime Beats 100.00%
 
 #include <cassert>
 #include <iostream>
@@ -11,18 +14,20 @@
 class Solution {
 public:
     int maxProfit(std::vector<int>& prices) {
-        int profit = 0;
+        if (prices.empty()) {
+            return 0;
+        }
 
-        int min = *prices.begin();
-        for (auto it = prices.begin() + 1; it != prices.end(); it++) {
-            if (*it - min > profit) {
-                profit = *it - min;
-            }
-            if (*it < min) {
-                min = *it;
+        int max_profit = 0;
+        int buy = prices[0];
+        for (int i = 1; i < prices.size(); i++) {
+            if (prices[i] < buy) {
+                buy = prices[i];
+            } else {
+                max_profit = std::max(max_profit, prices[i] - buy);
             }
         }
-        return profit;
+        return max_profit;
     }
 };
 
